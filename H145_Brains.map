@@ -1,0 +1,2 @@
+mac=00-A0-3D-02-16-08, addr=169.254.82.62, subnet=255.255.0.0, gateway=0.0.0.0, dns=0.0.0.0, hostname="LowerBrain"
+mac=00-A0-3D-02-15-FE, addr=169.254.82.63, subnet=255.255.0.0, gateway=0.0.0.0, dns=0.0.0.0, hostname="UpperBrain"
