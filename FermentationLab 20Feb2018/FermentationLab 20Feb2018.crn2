@@ -1,0 +1,278 @@
+0 TASK  &_INIT_IO
+0 TASK &Biogas1
+0 TASK &Biogas2
+0 TASK &Biogas3
+0 TASK &Biogas4
+0 TASK &Biogas5
+0 TASK &Biogas6
+0 TASK &Biogas7
+0 TASK &Biogas8
+0 TASK &Data_logging
+0 TASK &Feed1
+0 TASK &Feed2
+0 TASK &Feed3
+0 TASK &Feed4
+0 TASK &Feed5
+0 TASK &Feed6
+0 TASK &Feed7
+0 TASK &Feed8
+0 TASK &Powerup
+0 TASK &Probes
+0 TASK &Recirculation1
+0 TASK &Recirculation2
+0 TASK &Recirculation3
+0 TASK &Recirculation4
+0 TASK &Recirculation5
+0 TASK &Recirculation6
+0 TASK &Recirculation7
+0 TASK &Recirculation8
+1073741824 FVAR ^D1_Feed
+0 FVAR ^D1_FM
+0 IVAR ^D1_HRT
+0 FVAR ^D1_pH
+0 FVAR ^D1_Temp
+1073741824 FVAR ^D2_Feed
+0 FVAR ^D2_FM
+0 IVAR ^D2_HRT
+0 FVAR ^D2_pH
+0 FVAR ^D2_Temp
+1073741824 FVAR ^D3_Feed
+0 FVAR ^D3_FM
+0 IVAR ^D3_HRT
+0 FVAR ^D3_pH
+0 FVAR ^D3_Temp
+1073741824 FVAR ^D4_Feed
+0 FVAR ^D4_FM
+0 IVAR ^D4_HRT
+0 FVAR ^D4_pH
+0 FVAR ^D4_Temp
+1073741824 FVAR ^D5_Feed
+0 FVAR ^D5_FM
+0 IVAR ^D5_HRT
+0 FVAR ^D5_pH
+0 FVAR ^D5_Temp
+1073741824 FVAR ^D6_Feed
+0 FVAR ^D6_FM
+0 IVAR ^D6_HRT
+0 FVAR ^D6_pH
+0 FVAR ^D6_Temp
+1073741824 FVAR ^D7_Feed
+0 FVAR ^D7_FM
+0 IVAR ^D7_HRT
+0 FVAR ^D7_pH
+0 FVAR ^D7_Temp
+1073741824 FVAR ^D8_Feed
+0 FVAR ^D8_FM
+0 IVAR ^D8_HRT
+0 FVAR ^D8_pH
+0 FVAR ^D8_Temp
+0 FVAR ^D9_pH
+0 FVAR ^D9_Temp
+0 FVAR ^F1_day
+0 TVAR ^F1_off
+0 TVAR ^F1_on
+1073741824 FVAR ^F1_pulses
+0 FVAR ^F2_day
+0 TVAR ^F2_off
+0 TVAR ^F2_on
+1073741824 FVAR ^F2_pulses
+0 FVAR ^F3_day
+0 TVAR ^F3_off
+0 TVAR ^F3_on
+0 FVAR ^F3_pulses
+0 FVAR ^F4_day
+0 TVAR ^F4_off
+0 TVAR ^F4_on
+1073741824 FVAR ^F4_pulses
+0 FVAR ^F5_day
+0 TVAR ^F5_off
+0 TVAR ^F5_on
+0 FVAR ^F5_pulses
+0 FVAR ^F6_day
+0 TVAR ^F6_off
+0 TVAR ^F6_on
+0 FVAR ^F6_pulses
+0 FVAR ^F7_day
+0 TVAR ^F7_off
+0 TVAR ^F7_on
+0 FVAR ^F7_pulses
+0 FVAR ^F8_day
+0 TVAR ^F8_off
+0 TVAR ^F8_on
+0 FVAR ^F8_pulses
+0 IVAR ^FM1_biogas
+0 IVAR ^FM1_biogas_day
+0 IVAR ^FM1_counts
+0 IVAR ^FM2_biogas
+0 IVAR ^FM2_biogas_day
+0 IVAR ^FM2_counts
+0 IVAR ^FM3_biogas
+0 IVAR ^FM3_biogas_day
+0 IVAR ^FM3_counts
+0 IVAR ^FM4_biogas
+0 IVAR ^FM4_biogas_day
+0 IVAR ^FM4_counts
+0 IVAR ^FM5_biogas
+0 IVAR ^FM5_biogas_day
+0 IVAR ^FM5_counts
+0 IVAR ^FM6_biogas
+0 IVAR ^FM6_biogas_day
+0 IVAR ^FM6_counts
+0 IVAR ^FM7_biogas
+0 IVAR ^FM7_biogas_day
+0 IVAR ^FM7_counts
+0 IVAR ^FM8_biogas
+0 IVAR ^FM8_biogas_day
+0 IVAR ^FM8_counts
+0 IVAR ^FM9_counts
+0 IVAR ^Quarter
+0 TVAR ^R1_off
+0 TVAR ^R1_on
+0 TVAR ^R2_off
+0 TVAR ^R2_on
+0 TVAR ^R3_off
+0 TVAR ^R3_on
+0 TVAR ^R4_off
+0 TVAR ^R4_on
+0 TVAR ^R5_off
+0 TVAR ^R5_on
+0 TVAR ^R6_off
+0 TVAR ^R6_on
+0 TVAR ^R7_off
+0 TVAR ^R7_on
+0 TVAR ^R8_off
+0 TVAR ^R8_on
+0 IVAR ^sD1txt
+0 IVAR ^sD2txt
+0 IVAR ^sD3txt
+0 IVAR ^sD4txt
+0 IVAR ^sD5txt
+0 IVAR ^sD6txt
+0 IVAR ^sD7txt
+0 IVAR ^sD8txt
+0 IVAR ^Since_midnight
+0 FVAR ^status_Biogas1
+0 FVAR ^status_Biogas2
+0 FVAR ^status_Biogas3
+0 FVAR ^status_Biogas4
+0 FVAR ^status_Biogas5
+0 FVAR ^status_Biogas6
+0 FVAR ^status_Biogas7
+0 FVAR ^status_Biogas8
+0 IVAR ^status_Data_logging
+0 IVAR ^status_Feed1
+0 IVAR ^status_Feed2
+0 IVAR ^status_Feed3
+0 IVAR ^status_Feed4
+0 IVAR ^status_Feed5
+0 IVAR ^status_Feed6
+0 IVAR ^status_Feed7
+0 IVAR ^status_Feed8
+0 IVAR ^status_log
+0 IVAR ^status_Probes
+0 IVAR ^status_Recirculation
+0 IVAR ^status_Recirculation1
+0 IVAR ^status_Recirculation2
+0 IVAR ^status_Recirculation3
+0 IVAR ^status_Recirculation4
+0 IVAR ^status_Recirculation5
+0 IVAR ^status_Recirculation6
+0 IVAR ^status_Recirculation7
+0 IVAR ^status_Recirculation8
+50 0 $VAR *D1row 
+50 0 $VAR *D2row 
+50 0 $VAR *D3row 
+50 0 $VAR *D4row 
+50 0 $VAR *D5row 
+50 0 $VAR *D6row 
+50 0 $VAR *D7row 
+50 0 $VAR *D8row 
+10 0 $VAR *Date 
+4 0 $VAR *sD1_pH 
+4 0 $VAR *sD1_Temp 
+4 0 $VAR *sD2_pH 
+4 0 $VAR *sD2_Temp 
+4 0 $VAR *sD3_pH 
+4 0 $VAR *sD3_Temp 
+4 0 $VAR *sD4_pH 
+4 0 $VAR *sD4_Temp 
+4 0 $VAR *sD5_pH 
+4 0 $VAR *sD5_Temp 
+4 0 $VAR *sD6_pH 
+4 0 $VAR *sD6_Temp 
+4 0 $VAR *sD7_pH 
+4 0 $VAR *sD7_Temp 
+4 0 $VAR *sD8_pH 
+4 0 $VAR *sD8_Temp 
+4 0 $VAR *sD9_pH 
+4 0 $VAR *sD9_Temp 
+3 0 $VAR *sFM1_counts 
+3 0 $VAR *sFM2_counts 
+3 0 $VAR *sFM3_counts 
+3 0 $VAR *sFM4_counts 
+3 0 $VAR *sFM5_counts 
+3 0 $VAR *sFM6_counts 
+3 0 $VAR *sFM7_counts 
+3 0 $VAR *sFM8_counts 
+3 0 $VAR *sFM9_counts 
+50 0 $VAR *string_log 
+8 0 $VAR *Time 
+1024 1073741824 COMVAR *D1txt 
+1024 1073741824 COMVAR *D2txt 
+1024 1073741824 COMVAR *D3txt 
+1024 0 COMVAR *D4txt 
+1024 0 COMVAR *D5txt 
+1024 0 COMVAR *D6txt 
+1024 0 COMVAR *D7txt 
+1024 0 COMVAR *D8txt 
+1024 0 COMVAR *log 
+
+nullM64BOARD $FFFFFFFE $FFFFFFFE 16 32769 1.000000 0.010000 0.000000 2001 $A9FE523F 0 11 BOARD.MMP %Upper
+ 4 $80000003 SPOINT 0.0    OUTPUT  0  0 %Upper 0 POINT.TNG ~F1
+ 4 $80000003 SPOINT 0.0    OUTPUT  1  0 %Upper 0 POINT.TNG ~F2
+ 4 $80000003 SPOINT 0.0    OUTPUT  2  0 %Upper 0 POINT.TNG ~F3
+ 4 $80000003 SPOINT 0.0    OUTPUT  3  0 %Upper 0 POINT.TNG ~F4
+ 4 $80000003 SPOINT 0.0    OUTPUT  0  1 %Upper 0 POINT.TNG ~F5
+ 4 $80000003 SPOINT 0.0    OUTPUT  1  1 %Upper 0 POINT.TNG ~F6
+ 4 $80000003 SPOINT 0.0    OUTPUT  2  1 %Upper 0 POINT.TNG ~F7
+ 4 $80000003 SPOINT 0.0    OUTPUT  3  1 %Upper 0 POINT.TNG ~F8
+ 4 $80000003 SPOINT 0.0    OUTPUT  0  2 %Upper 0 POINT.TNG ~R8
+ 4 $80000003 SPOINT 0.0    OUTPUT  1  2 %Upper 0 POINT.TNG ~R1
+ 4 $80000003 SPOINT 0.0    OUTPUT  2  2 %Upper 0 POINT.TNG ~R2
+ 4 $80000003 SPOINT 0.0    OUTPUT  3  2 %Upper 0 POINT.TNG ~R3
+ 4 $80000003 SPOINT 0.0    OUTPUT  0  3 %Upper 0 POINT.TNG ~R4
+ 4 $80000003 SPOINT 0.0    OUTPUT  1  3 %Upper 0 POINT.TNG ~R5
+ 4 $80000003 SPOINT 0.0    OUTPUT  2  3 %Upper 0 POINT.TNG ~R6
+ 4 $80000003 SPOINT 0.0    OUTPUT  3  3 %Upper 0 POINT.TNG ~R7
+ 2 $40000001 APOINT  -10.0000 12  0  4 %Upper 0 POINT.TNG ~FM1
+ 2 $40000001 APOINT  -10.0000 12  1  4 %Upper 0 POINT.TNG ~FM2
+ 2 $40000001 APOINT  -10.0000 12  0  5 %Upper 0 POINT.TNG ~FM3
+ 2 $40000001 APOINT  -10.0000 12  1  5 %Upper 0 POINT.TNG ~FM4
+ 2 $40000001 APOINT  -10.0000 12  0  6 %Upper 0 POINT.TNG ~FM5
+ 2 $40000001 APOINT  -10.0000 12  1  6 %Upper 0 POINT.TNG ~FM6
+ 2 $40000001 APOINT  -10.0000 12  0  7 %Upper 0 POINT.TNG ~FM7
+ 2 $40000001 APOINT  -10.0000 12  1  7 %Upper 0 POINT.TNG ~FM8
+ 2 $40000001 APOINT  -21.0000 64  0  8 %Upper 0 POINT.TNG ~PH1
+  14.0000  -21.0000 ~PH1 SET.SCALE
+ 2 $40000001 APOINT  -21.0000 64  1  8 %Upper 0 POINT.TNG ~PH2
+  14.0000  -21.0000 ~PH2 SET.SCALE
+ 2 $40000001 APOINT  -21.0000 64  0  9 %Upper 0 POINT.TNG ~PH3
+  14.0000  -21.0000 ~PH3 SET.SCALE
+ 2 $40000001 APOINT  -21.0000 64  1  9 %Upper 0 POINT.TNG ~PH4
+  14.0000  -21.0000 ~PH4 SET.SCALE
+ 2 $40000001 APOINT  -21.0000 64  0 10 %Upper 0 POINT.TNG ~PH5
+  14.0000  -21.0000 ~PH5 SET.SCALE
+ 2 $40000001 APOINT  -21.0000 64  1 10 %Upper 0 POINT.TNG ~PH6
+  14.0000  -21.0000 ~PH6 SET.SCALE
+ 2 $40000001 APOINT  -21.0000 64  0 11 %Upper 0 POINT.TNG ~PH7
+  14.0000  -21.0000 ~PH7 SET.SCALE
+ 2 $40000001 APOINT  -21.0000 64  1 11 %Upper 0 POINT.TNG ~PH8
+  14.0000  -21.0000 ~PH8 SET.SCALE
+ 2 $40000001 APOINT -210.0000 5  0 12 %Upper 0 POINT.TNG ~T1
+ 2 $40000001 APOINT -210.0000 5  1 12 %Upper 0 POINT.TNG ~T2
+ 2 $40000001 APOINT -210.0000 5  0 13 %Upper 0 POINT.TNG ~T3
+ 2 $40000001 APOINT -210.0000 5  1 13 %Upper 0 POINT.TNG ~T4
+ 2 $40000001 APOINT -210.0000 5  0 14 %Upper 0 POINT.TNG ~T5
+ 2 $40000001 APOINT -210.0000 5  1 14 %Upper 0 POINT.TNG ~T6
+ 2 $40000001 APOINT -210.0000 5  0 15 %Upper 0 POINT.TNG ~T7
+ 2 $40000001 APOINT -210.0000 5  1 15 %Upper 0 POINT.TNG ~T8

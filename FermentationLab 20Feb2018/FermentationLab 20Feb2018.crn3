@@ -1,0 +1,540 @@
+CREATE T.ARRAY
+&Biogas1 ,
+&Biogas2 ,
+&Biogas3 ,
+&Biogas4 ,
+&Biogas5 ,
+&Biogas6 ,
+&Biogas7 ,
+&Biogas8 ,
+&Data_logging ,
+&Feed1 ,
+&Feed2 ,
+&Feed3 ,
+&Feed4 ,
+&Feed5 ,
+&Feed6 ,
+&Feed7 ,
+&Feed8 ,
+&Powerup ,
+&Probes ,
+&Recirculation1 ,
+&Recirculation2 ,
+&Recirculation3 ,
+&Recirculation4 ,
+&Recirculation5 ,
+&Recirculation6 ,
+&Recirculation7 ,
+&Recirculation8 ,
+ 0 ,
+CREATE V.ARRAY
+^D1_Feed ,
+^D1_FM ,
+^D1_HRT ,
+^D1_pH ,
+^D1_Temp ,
+^D2_Feed ,
+^D2_FM ,
+^D2_HRT ,
+^D2_pH ,
+^D2_Temp ,
+^D3_Feed ,
+^D3_FM ,
+^D3_HRT ,
+^D3_pH ,
+^D3_Temp ,
+^D4_Feed ,
+^D4_FM ,
+^D4_HRT ,
+^D4_pH ,
+^D4_Temp ,
+^D5_Feed ,
+^D5_FM ,
+^D5_HRT ,
+^D5_pH ,
+^D5_Temp ,
+^D6_Feed ,
+^D6_FM ,
+^D6_HRT ,
+^D6_pH ,
+^D6_Temp ,
+^D7_Feed ,
+^D7_FM ,
+^D7_HRT ,
+^D7_pH ,
+^D7_Temp ,
+^D8_Feed ,
+^D8_FM ,
+^D8_HRT ,
+^D8_pH ,
+^D8_Temp ,
+^D9_pH ,
+^D9_Temp ,
+^F1_day ,
+^F1_pulses ,
+^F2_day ,
+^F2_pulses ,
+^F3_day ,
+^F3_pulses ,
+^F4_day ,
+^F4_pulses ,
+^F5_day ,
+^F5_pulses ,
+^F6_day ,
+^F6_pulses ,
+^F7_day ,
+^F7_pulses ,
+^F8_day ,
+^F8_pulses ,
+^FM1_biogas ,
+^FM1_biogas_day ,
+^FM1_counts ,
+^FM2_biogas ,
+^FM2_biogas_day ,
+^FM2_counts ,
+^FM3_biogas ,
+^FM3_biogas_day ,
+^FM3_counts ,
+^FM4_biogas ,
+^FM4_biogas_day ,
+^FM4_counts ,
+^FM5_biogas ,
+^FM5_biogas_day ,
+^FM5_counts ,
+^FM6_biogas ,
+^FM6_biogas_day ,
+^FM6_counts ,
+^FM7_biogas ,
+^FM7_biogas_day ,
+^FM7_counts ,
+^FM8_biogas ,
+^FM8_biogas_day ,
+^FM8_counts ,
+^FM9_counts ,
+^Quarter ,
+^sD1txt ,
+^sD2txt ,
+^sD3txt ,
+^sD4txt ,
+^sD5txt ,
+^sD6txt ,
+^sD7txt ,
+^sD8txt ,
+^Since_midnight ,
+^status_Biogas1 ,
+^status_Biogas2 ,
+^status_Biogas3 ,
+^status_Biogas4 ,
+^status_Biogas5 ,
+^status_Biogas6 ,
+^status_Biogas7 ,
+^status_Biogas8 ,
+^status_Data_logging ,
+^status_Feed1 ,
+^status_Feed2 ,
+^status_Feed3 ,
+^status_Feed4 ,
+^status_Feed5 ,
+^status_Feed6 ,
+^status_Feed7 ,
+^status_Feed8 ,
+^status_log ,
+^status_Probes ,
+^status_Recirculation ,
+^status_Recirculation1 ,
+^status_Recirculation2 ,
+^status_Recirculation3 ,
+^status_Recirculation4 ,
+^status_Recirculation5 ,
+^status_Recirculation6 ,
+^status_Recirculation7 ,
+^status_Recirculation8 ,
+*D1row ,
+*D2row ,
+*D3row ,
+*D4row ,
+*D5row ,
+*D6row ,
+*D7row ,
+*D8row ,
+*Date ,
+*sD1_pH ,
+*sD1_Temp ,
+*sD2_pH ,
+*sD2_Temp ,
+*sD3_pH ,
+*sD3_Temp ,
+*sD4_pH ,
+*sD4_Temp ,
+*sD5_pH ,
+*sD5_Temp ,
+*sD6_pH ,
+*sD6_Temp ,
+*sD7_pH ,
+*sD7_Temp ,
+*sD8_pH ,
+*sD8_Temp ,
+*sD9_pH ,
+*sD9_Temp ,
+*sFM1_counts ,
+*sFM2_counts ,
+*sFM3_counts ,
+*sFM4_counts ,
+*sFM5_counts ,
+*sFM6_counts ,
+*sFM7_counts ,
+*sFM8_counts ,
+*sFM9_counts ,
+*string_log ,
+*Time ,
+*_HSV_SEMA ,
+*_HSV_TEMP ,
+*D1txt ,
+*D2txt ,
+*D3txt ,
+*D4txt ,
+*D5txt ,
+*D6txt ,
+*D7txt ,
+*D8txt ,
+*log ,
+ 0 ,
+CREATE TI.ARRAY
+^F1_off ,
+^F1_on ,
+^F2_off ,
+^F2_on ,
+^F3_off ,
+^F3_on ,
+^F4_off ,
+^F4_on ,
+^F5_off ,
+^F5_on ,
+^F6_off ,
+^F6_on ,
+^F7_off ,
+^F7_on ,
+^F8_off ,
+^F8_on ,
+^R1_off ,
+^R1_on ,
+^R2_off ,
+^R2_on ,
+^R3_off ,
+^R3_on ,
+^R4_off ,
+^R4_on ,
+^R5_off ,
+^R5_on ,
+^R6_off ,
+^R6_on ,
+^R7_off ,
+^R7_on ,
+^R8_off ,
+^R8_on ,
+ 0 ,
+CREATE PTR.ARRAY
+ 0 ,
+CREATE TA.ARRAY 
+ 0 ,
+CREATE PTRTABLE.ARRAY 
+ 0 ,
+CREATE B.ARRAY
+%Upper ,
+ 0 ,
+CREATE P.ARRAY
+~F1 ,
+~F2 ,
+~F3 ,
+~F4 ,
+~F5 ,
+~F6 ,
+~F7 ,
+~F8 ,
+~R1 ,
+~R2 ,
+~R3 ,
+~R4 ,
+~R5 ,
+~R6 ,
+~R7 ,
+~R8 ,
+~FM1 ,
+~FM2 ,
+~FM3 ,
+~FM4 ,
+~FM5 ,
+~FM6 ,
+~FM7 ,
+~FM8 ,
+~PH1 ,
+~PH2 ,
+~PH3 ,
+~PH4 ,
+~PH5 ,
+~PH6 ,
+~PH7 ,
+~PH8 ,
+~T1 ,
+~T2 ,
+~T3 ,
+~T4 ,
+~T5 ,
+~T6 ,
+~T7 ,
+~T8 ,
+ 0 ,
+CREATE PID.ARRAY
+ 0 ,
+CREATE E/R.ARRAY
+ 0 ,
+CREATE E/RGROUP.ARRAY
+ 0 ,
+: CONFIG_PORTS
+;
+: W_INIT_IO
+CONFIG_PORTS
+" %Upper  (1/1)" *_HSV_INIT_IO $MOVE 0 ^_HNV_INIT_IO @!
+%Upper DISABLE
+ " Initializing variables" *_HSV_INIT_IO $MOVE
+0.00000000 ^D1_FM @!
+0 ^D1_HRT @!
+0.00000000 ^D1_pH @!
+0.00000000 ^D1_Temp @!
+0.00000000 ^D2_FM @!
+0 ^D2_HRT @!
+0.00000000 ^D2_pH @!
+0.00000000 ^D2_Temp @!
+0.00000000 ^D3_FM @!
+0 ^D3_HRT @!
+0.00000000 ^D3_pH @!
+0.00000000 ^D3_Temp @!
+0.00000000 ^D4_FM @!
+0 ^D4_HRT @!
+0.00000000 ^D4_pH @!
+0.00000000 ^D4_Temp @!
+0.00000000 ^D5_FM @!
+0 ^D5_HRT @!
+0.00000000 ^D5_pH @!
+0.00000000 ^D5_Temp @!
+0.00000000 ^D6_FM @!
+0 ^D6_HRT @!
+0.00000000 ^D6_pH @!
+0.00000000 ^D6_Temp @!
+0.00000000 ^D7_FM @!
+0 ^D7_HRT @!
+0.00000000 ^D7_pH @!
+0.00000000 ^D7_Temp @!
+0.00000000 ^D8_FM @!
+0 ^D8_HRT @!
+0.00000000 ^D8_pH @!
+0.00000000 ^D8_Temp @!
+0.00000000 ^D9_pH @!
+0.00000000 ^D9_Temp @!
+0.00000000 ^F1_day @!
+0.0 ^F1_off @!
+0.0 ^F1_on @!
+0.00000000 ^F2_day @!
+0.0 ^F2_off @!
+0.0 ^F2_on @!
+0.00000000 ^F3_day @!
+0.0 ^F3_off @!
+0.0 ^F3_on @!
+8.0000000 ^F3_pulses @!
+0.00000000 ^F4_day @!
+0.0 ^F4_off @!
+0.0 ^F4_on @!
+0.00000000 ^F5_day @!
+0.0 ^F5_off @!
+0.0 ^F5_on @!
+8.0000000 ^F5_pulses @!
+0.00000000 ^F6_day @!
+0.0 ^F6_off @!
+0.0 ^F6_on @!
+8.0000000 ^F6_pulses @!
+0.00000000 ^F7_day @!
+0.0 ^F7_off @!
+0.0 ^F7_on @!
+24.000000 ^F7_pulses @!
+0.00000000 ^F8_day @!
+0.0 ^F8_off @!
+0.0 ^F8_on @!
+24.000000 ^F8_pulses @!
+0 ^FM1_biogas @!
+0 ^FM1_biogas_day @!
+0 ^FM1_counts @!
+0 ^FM2_biogas @!
+0 ^FM2_biogas_day @!
+0 ^FM2_counts @!
+0 ^FM3_biogas @!
+0 ^FM3_biogas_day @!
+0 ^FM3_counts @!
+0 ^FM4_biogas @!
+0 ^FM4_biogas_day @!
+0 ^FM4_counts @!
+0 ^FM5_biogas @!
+0 ^FM5_biogas_day @!
+0 ^FM5_counts @!
+0 ^FM6_biogas @!
+0 ^FM6_biogas_day @!
+0 ^FM6_counts @!
+0 ^FM7_biogas @!
+0 ^FM7_biogas_day @!
+0 ^FM7_counts @!
+0 ^FM8_biogas @!
+0 ^FM8_biogas_day @!
+0 ^FM8_counts @!
+0 ^FM9_counts @!
+0 ^Quarter @!
+0.0 ^R1_off @!
+0.0 ^R1_on @!
+0.0 ^R2_off @!
+0.0 ^R2_on @!
+0.0 ^R3_off @!
+0.0 ^R3_on @!
+0.0 ^R4_off @!
+0.0 ^R4_on @!
+0.0 ^R5_off @!
+0.0 ^R5_on @!
+0.0 ^R6_off @!
+0.0 ^R6_on @!
+0.0 ^R7_off @!
+0.0 ^R7_on @!
+0.0 ^R8_off @!
+0.0 ^R8_on @!
+0 ^sD1txt @!
+0 ^sD2txt @!
+0 ^sD3txt @!
+0 ^sD4txt @!
+0 ^sD5txt @!
+0 ^sD6txt @!
+0 ^sD7txt @!
+0 ^sD8txt @!
+0 ^Since_midnight @!
+0.00000000 ^status_Biogas1 @!
+0.00000000 ^status_Biogas2 @!
+0.00000000 ^status_Biogas3 @!
+0.00000000 ^status_Biogas4 @!
+0.00000000 ^status_Biogas5 @!
+0.00000000 ^status_Biogas6 @!
+0.00000000 ^status_Biogas7 @!
+0.00000000 ^status_Biogas8 @!
+0 ^status_Data_logging @!
+0 ^status_Feed1 @!
+0 ^status_Feed2 @!
+0 ^status_Feed3 @!
+0 ^status_Feed4 @!
+0 ^status_Feed5 @!
+0 ^status_Feed6 @!
+0 ^status_Feed7 @!
+0 ^status_Feed8 @!
+0 ^status_log @!
+0 ^status_Probes @!
+0 ^status_Recirculation @!
+0 ^status_Recirculation1 @!
+0 ^status_Recirculation2 @!
+0 ^status_Recirculation3 @!
+0 ^status_Recirculation4 @!
+0 ^status_Recirculation5 @!
+0 ^status_Recirculation6 @!
+0 ^status_Recirculation7 @!
+0 ^status_Recirculation8 @!
+" "
+ *D1row $MOVE
+" "
+ *D2row $MOVE
+" "
+ *D3row $MOVE
+" "
+ *D4row $MOVE
+" "
+ *D5row $MOVE
+" "
+ *D6row $MOVE
+" "
+ *D7row $MOVE
+" "
+ *D8row $MOVE
+" "
+ *Date $MOVE
+" "
+ *sD1_pH $MOVE
+" "
+ *sD1_Temp $MOVE
+" "
+ *sD2_pH $MOVE
+" "
+ *sD2_Temp $MOVE
+" "
+ *sD3_pH $MOVE
+" "
+ *sD3_Temp $MOVE
+" "
+ *sD4_pH $MOVE
+" "
+ *sD4_Temp $MOVE
+" "
+ *sD5_pH $MOVE
+" "
+ *sD5_Temp $MOVE
+" "
+ *sD6_pH $MOVE
+" "
+ *sD6_Temp $MOVE
+" "
+ *sD7_pH $MOVE
+" "
+ *sD7_Temp $MOVE
+" "
+ *sD8_pH $MOVE
+" "
+ *sD8_Temp $MOVE
+" "
+ *sD9_pH $MOVE
+" "
+ *sD9_Temp $MOVE
+" "
+ *sFM1_counts $MOVE
+" "
+ *sFM2_counts $MOVE
+" "
+ *sFM3_counts $MOVE
+" "
+ *sFM4_counts $MOVE
+" "
+ *sFM5_counts $MOVE
+" "
+ *sFM6_counts $MOVE
+" "
+ *sFM7_counts $MOVE
+" "
+ *sFM8_counts $MOVE
+" "
+ *sFM9_counts $MOVE
+" "
+ *string_log $MOVE
+" "
+ *Time $MOVE
+" file:a,C:\Users\Digester\Documents\Digester4.txt"
+ *D4txt $MOVE
+" file:a,C:\Users\Digester\Documents\Digester5.txt"
+ *D5txt $MOVE
+" file:a,C:\Users\Digester\Documents\Digester6.txt"
+ *D6txt $MOVE
+" file:a,C:\Users\Digester\Documents\Digester7.txt"
+ *D7txt $MOVE
+" file:a,C:\Users\Digester\Documents\Digester8.txt"
+ *D8txt $MOVE
+" file:a,C:\Users\Digester\Documents\Emmanuel\Opto22\FermentationLab\RuntimeLogging.log"
+ *log $MOVE
+ " " *_HSV_INIT_IO $MOVE
+;
+T: T_INIT_IO
+W_INIT_IO
+&Powerup START.T DROP
+T;
+&_INIT_IO ' T_INIT_IO  SETTASK
+   : _RUN
+   CLEARERRORS
+   &_INIT_IO START.T DROP
+   ;

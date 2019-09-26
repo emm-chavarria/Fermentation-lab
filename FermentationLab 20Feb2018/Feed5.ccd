@@ -1,0 +1,186 @@
+: 15_0
+2 JUMP ;
+: 15_9
+
+1 LINE.NUM
+  ~F5   ON
+
+2 LINE.NUM
+  ^F5_on   StartTimer
+4 JUMP ;
+: 15_10
+
+1 LINE.NUM
+  ~F5   OFF
+
+2 LINE.NUM
+  ^F5_off   StartTimer
+12 JUMP ;
+: 15_12
+
+1 LINE.NUM
+  ^D5_Feed @@ 
+  6.28    F/
+  ^F5_day @! 
+
+2 LINE.NUM
+  5000 I>F 
+  ^D5_Feed @@   F/
+  ^D5_HRT F@! 
+
+3 LINE.NUM
+  10    DELAY
+
+4 LINE.NUM
+  ^F5_day @@ 
+  ^F5_pulses @@   F/
+  ^F5_on @! 
+0 JUMP ;
+: 15_14
+1 LINE.NUM 24 I>F ^F5_pulses @@ F/ 3600 I>F F* ^F5_off @! 
+-4 JUMP ;
+: 15_17
+
+1 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 15_21
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+0 JUMP ;
+: 15_23
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 5 ON"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+0 JUMP ;
+: 15_25
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 15_28
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 15_29
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+-2 JUMP ;
+: 15_42
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+0 JUMP ;
+: 15_43
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 15_46
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 15_48
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 5 OFF"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+-2 JUMP ;
+: 15_50
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 15_8
+TRUE
+
+1 LINE.NUM
+  ^F5_off   T0=
+LAND
+IF -14 ELSE -12 THEN JUMP ;
+: 15_11
+TRUE
+
+1 LINE.NUM
+  ^F5_on   T0=
+LAND
+IF -16 ELSE -1 THEN JUMP ;
+: 15_24
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -9 ELSE -11 THEN JUMP ;
+: 15_31
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -11 ELSE -3 THEN JUMP ;
+: 15_40
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -9 ELSE -5 THEN JUMP ;
+: 15_47
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -11 ELSE -9 THEN JUMP ;
+T: T15
+DUMMY
+15_0
+15_9
+15_10
+15_12
+15_14
+15_17
+15_21
+15_23
+15_25
+15_28
+15_29
+15_42
+15_43
+15_46
+15_48
+15_50
+15_8
+15_11
+15_24
+15_31
+15_40
+15_47
+T;
+&Feed5 ' T15 SETTASK

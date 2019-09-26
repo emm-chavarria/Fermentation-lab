@@ -1,0 +1,178 @@
+: 27_0
+1 JUMP ;
+: 27_41
+
+1 LINE.NUM
+  ~R1   OFF
+
+2 LINE.NUM
+  ^R1_off   StartTimer
+13 JUMP ;
+: 27_47
+
+1 LINE.NUM
+  3600.0  
+  ^R1_off   SetTimer
+
+2 LINE.NUM
+  30.0  
+  ^R1_on   SetTimer
+0 JUMP ;
+: 27_48
+
+1 LINE.NUM
+  ~R1   ON
+
+2 LINE.NUM
+  ^R1_on   StartTimer
+2 JUMP ;
+: 27_53
+
+1 LINE.NUM
+  10    DELAY
+12 JUMP ;
+: 27_56
+
+1 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 27_74
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+0 JUMP ;
+: 27_76
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Recirc pump 1 ON"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+0 JUMP ;
+: 27_78
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 27_81
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 27_82
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+-2 JUMP ;
+: 27_95
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+0 JUMP ;
+: 27_96
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 27_99
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 27_101
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Recirc pump 1 OFF"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+-2 JUMP ;
+: 27_103
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 27_40
+TRUE
+
+1 LINE.NUM
+  ^R1_off   T0=
+LAND
+IF -15 ELSE -12 THEN JUMP ;
+: 27_45
+FALSE
+
+1 LINE.NUM
+  ^R1_on   T0=
+LOR
+IF -17 ELSE -14 THEN JUMP ;
+: 27_77
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -9 ELSE -11 THEN JUMP ;
+: 27_84
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -11 ELSE -3 THEN JUMP ;
+: 27_93
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -9 ELSE -5 THEN JUMP ;
+: 27_100
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -11 ELSE -9 THEN JUMP ;
+T: T27
+DUMMY
+27_0
+27_41
+27_47
+27_48
+27_53
+27_56
+27_74
+27_76
+27_78
+27_81
+27_82
+27_95
+27_96
+27_99
+27_101
+27_103
+27_40
+27_45
+27_77
+27_84
+27_93
+27_100
+T;
+&Recirculation1 ' T27 SETTASK

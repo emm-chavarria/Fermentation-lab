@@ -1,0 +1,25 @@
+: 7_0
+1 JUMP ;
+: 7_6
+
+1 LINE.NUM
+  ^FM6_counts   1+@!
+
+2 LINE.NUM
+  4.0    FDELAY
+0 JUMP ;
+: 7_7
+TRUE
+
+1 LINE.NUM
+  ~FM6 @@ 
+  1.8    F<
+LAND
+IF -1 ELSE -2 THEN JUMP ;
+T: T7
+DUMMY
+7_0
+7_6
+7_7
+T;
+&Biogas6 ' T7 SETTASK

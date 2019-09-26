@@ -1,0 +1,837 @@
+: 22_0
+5 JUMP ;
+: 22_3
+4 JUMP ;
+: 22_5
+
+1 LINE.NUM
+  60.0    FDELAY
+-2 JUMP ;
+: 22_9
+
+1 LINE.NUM
+  ^D1_Temp @@ 
+  4  
+  1  
+  *sD1_Temp   FF.R$
+
+2 LINE.NUM
+  ^D2_Temp @@ 
+  4  
+  1  
+  *sD2_Temp   FF.R$
+
+3 LINE.NUM
+  ^D3_Temp @@ 
+  4  
+  1  
+  *sD3_Temp   FF.R$
+
+4 LINE.NUM
+  ^D4_Temp @@ 
+  4  
+  1  
+  *sD4_Temp   FF.R$
+
+5 LINE.NUM
+  ^D5_Temp @@ 
+  4  
+  1  
+  *sD5_Temp   FF.R$
+
+6 LINE.NUM
+  ^D6_Temp @@ 
+  4  
+  1  
+  *sD6_Temp   FF.R$
+
+7 LINE.NUM
+  ^D7_Temp @@ 
+  4  
+  1  
+  *sD7_Temp   FF.R$
+
+8 LINE.NUM
+  ^D8_Temp @@ 
+  4  
+  1  
+  *sD8_Temp   FF.R$
+
+9 LINE.NUM
+  ^D9_Temp @@ 
+  4  
+  1  
+  *sD9_Temp   FF.R$
+3 JUMP ;
+: 22_10
+
+1 LINE.NUM
+  ^D1_pH @@ 
+  4  
+  1  
+  *sD1_pH   FF.R$
+
+2 LINE.NUM
+  ^D2_pH @@ 
+  4  
+  1  
+  *sD2_pH   FF.R$
+
+3 LINE.NUM
+  ^D3_pH @@ 
+  4  
+  1  
+  *sD3_pH   FF.R$
+
+4 LINE.NUM
+  ^D4_pH @@ 
+  4  
+  1  
+  *sD4_pH   FF.R$
+
+5 LINE.NUM
+  ^D5_pH @@ 
+  4  
+  1  
+  *sD5_pH   FF.R$
+
+6 LINE.NUM
+  ^D6_pH @@ 
+  4  
+  1  
+  *sD6_pH   FF.R$
+
+7 LINE.NUM
+  ^D7_pH @@ 
+  4  
+  1  
+  *sD7_pH   FF.R$
+
+8 LINE.NUM
+  ^D8_pH @@ 
+  4  
+  1  
+  *sD8_pH   FF.R$
+
+9 LINE.NUM
+  ^D9_pH @@ 
+  4  
+  1  
+  *sD9_pH   FF.R$
+-2 JUMP ;
+: 22_11
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 22_13
+
+1 LINE.NUM
+ SinceMidnight  ^Since_midnight @! 
+
+2 LINE.NUM
+ TIME@ DROP SWAP DROP  ^Quarter @! 
+
+3 LINE.NUM
+  10    DELAY
+20 JUMP ;
+: 22_21
+
+1 LINE.NUM
+  ^FM1_counts @@F 
+  3  
+  0  
+  *sFM1_counts   FF.R$
+
+2 LINE.NUM
+  ^FM2_counts @@F 
+  3  
+  0  
+  *sFM2_counts   FF.R$
+
+3 LINE.NUM
+  ^FM3_counts @@F 
+  3  
+  0  
+  *sFM3_counts   FF.R$
+
+4 LINE.NUM
+  ^FM4_counts @@F 
+  3  
+  0  
+  *sFM4_counts   FF.R$
+
+5 LINE.NUM
+  ^FM5_counts @@F 
+  3  
+  0  
+  *sFM5_counts   FF.R$
+
+6 LINE.NUM
+  ^FM6_counts @@F 
+  3  
+  0  
+  *sFM6_counts   FF.R$
+
+7 LINE.NUM
+  ^FM7_counts @@F 
+  3  
+  0  
+  *sFM7_counts   FF.R$
+
+8 LINE.NUM
+  ^FM8_counts @@F 
+  3  
+  0  
+  *sFM8_counts   FF.R$
+15 JUMP ;
+: 22_23
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND *Time  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sFM1_counts  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD1_Temp  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD1_pH  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D1row $MOVE Release1String 
+0 JUMP ;
+: 22_26
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND *Time  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sFM2_counts  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD2_Temp  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD2_pH  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D2row $MOVE Release1String 
+0 JUMP ;
+: 22_27
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND *Time  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sFM3_counts  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD3_Temp  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD3_pH  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D3row $MOVE Release1String 
+0 JUMP ;
+: 22_28
+
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND *Time  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sFM4_counts  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD4_Temp  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD4_pH  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D4row $MOVE Release1String 
+3 JUMP ;
+: 22_32
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND *Time  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sFM8_counts  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD8_Temp  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD8_pH  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D8row $MOVE Release1String 
+3 JUMP ;
+: 22_33
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND *Time  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sFM7_counts  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD7_Temp  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD7_pH  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D7row $MOVE Release1String 
+-2 JUMP ;
+: 22_34
+
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND *Time  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sFM6_counts  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD6_Temp  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD6_pH  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D6row $MOVE Release1String 
+-2 JUMP ;
+: 22_35
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND *Time  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sFM5_counts  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD5_Temp  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD5_pH  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D5row $MOVE Release1String 
+-2 JUMP ;
+: 22_45
+
+1 LINE.NUM
+  *D1txt   OPEN
+  ^sD1txt @! 
+
+2 LINE.NUM
+  *D2txt   OPEN
+  ^sD2txt @! 
+
+3 LINE.NUM
+  *D3txt   OPEN
+  ^sD3txt @! 
+
+4 LINE.NUM
+  *D4txt   OPEN
+  ^sD4txt @! 
+
+5 LINE.NUM
+  *D5txt   OPEN
+  ^sD5txt @! 
+
+6 LINE.NUM
+  *D6txt   OPEN
+  ^sD6txt @! 
+
+7 LINE.NUM
+  *D7txt   OPEN
+  ^sD7txt @! 
+
+8 LINE.NUM
+  *D8txt   OPEN
+  ^sD8txt @! 
+
+9 LINE.NUM
+  10    DELAY
+11 JUMP ;
+: 22_50
+
+1 LINE.NUM
+  *D1txt   CLOSE
+  ^sD1txt @! 
+
+2 LINE.NUM
+  *D2txt   CLOSE
+  ^sD2txt @! 
+
+3 LINE.NUM
+  *D3txt   CLOSE
+  ^sD3txt @! 
+
+4 LINE.NUM
+  *D4txt   CLOSE
+  ^sD4txt @! 
+
+5 LINE.NUM
+  *D5txt   CLOSE
+  ^sD5txt @! 
+
+6 LINE.NUM
+  *D6txt   CLOSE
+  ^sD6txt @! 
+
+7 LINE.NUM
+  *D7txt   CLOSE
+  ^sD7txt @! 
+
+8 LINE.NUM
+  *D8txt   CLOSE
+  ^sD8txt @! 
+
+9 LINE.NUM
+  10    DELAY
+11 JUMP ;
+: 22_51
+
+1 LINE.NUM
+  *D1row 
+  *D1txt   PRT$
+  ^sD1txt @! 
+
+2 LINE.NUM
+  *D2row 
+  *D2txt   PRT$
+  ^sD2txt @! 
+
+3 LINE.NUM
+  *D3row 
+  *D3txt   PRT$
+  ^sD3txt @! 
+
+4 LINE.NUM
+  *D4row 
+  *D4txt   PRT$
+  ^sD4txt @! 
+
+5 LINE.NUM
+  *D5row 
+  *D5txt   PRT$
+  ^sD5txt @! 
+
+6 LINE.NUM
+  *D6row 
+  *D6txt   PRT$
+  ^sD6txt @! 
+
+7 LINE.NUM
+  *D7row 
+  *D7txt   PRT$
+  ^sD7txt @! 
+
+8 LINE.NUM
+  *D8row 
+  *D8txt   PRT$
+  ^sD8txt @! 
+-2 JUMP ;
+: 22_63
+
+1 LINE.NUM
+  *D1row 
+  *D1txt   PRT$
+  ^sD1txt @! 
+
+2 LINE.NUM
+  *D2row 
+  *D2txt   PRT$
+  ^sD2txt @! 
+
+3 LINE.NUM
+  *D3row 
+  *D3txt   PRT$
+  ^sD3txt @! 
+
+4 LINE.NUM
+  *D4row 
+  *D4txt   PRT$
+  ^sD4txt @! 
+
+5 LINE.NUM
+  *D5row 
+  *D5txt   PRT$
+  ^sD5txt @! 
+
+6 LINE.NUM
+  *D6row 
+  *D6txt   PRT$
+  ^sD6txt @! 
+
+7 LINE.NUM
+  *D7row 
+  *D7txt   PRT$
+  ^sD7txt @! 
+
+8 LINE.NUM
+  *D8row 
+  *D8txt   PRT$
+  ^sD8txt @! 
+0 JUMP ;
+: 22_64
+
+1 LINE.NUM
+  *D1txt   CLOSE
+  ^sD1txt @! 
+
+2 LINE.NUM
+  *D2txt   CLOSE
+  ^sD2txt @! 
+
+3 LINE.NUM
+  *D3txt   CLOSE
+  ^sD3txt @! 
+
+4 LINE.NUM
+  *D4txt   CLOSE
+  ^sD4txt @! 
+
+5 LINE.NUM
+  *D5txt   CLOSE
+  ^sD5txt @! 
+
+6 LINE.NUM
+  *D6txt   CLOSE
+  ^sD6txt @! 
+
+7 LINE.NUM
+  *D7txt   CLOSE
+  ^sD7txt @! 
+
+8 LINE.NUM
+  *D8txt   CLOSE
+  ^sD8txt @! 
+
+9 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 22_68
+
+1 LINE.NUM
+  *D1txt   OPEN
+  ^sD1txt @! 
+
+2 LINE.NUM
+  *D2txt   OPEN
+  ^sD2txt @! 
+
+3 LINE.NUM
+  *D3txt   OPEN
+  ^sD3txt @! 
+
+4 LINE.NUM
+  *D4txt   OPEN
+  ^sD4txt @! 
+
+5 LINE.NUM
+  *D5txt   OPEN
+  ^sD5txt @! 
+
+6 LINE.NUM
+  *D6txt   OPEN
+  ^sD6txt @! 
+
+7 LINE.NUM
+  *D7txt   OPEN
+  ^sD7txt @! 
+
+8 LINE.NUM
+  *D8txt   OPEN
+  ^sD8txt @! 
+
+9 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 22_84
+1 LINE.NUM *_HSV_SEMA Acquire1String " MM/DD/YYYY"  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND " hh:mm:ss"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Biogas"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Temp (C)"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " pH"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D1row $MOVE 
+Release1String 
+2 LINE.NUM *_HSV_SEMA Acquire1String " MM/DD/YYYY"  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND " hh:mm:ss"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Biogas"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Temp (C)"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " pH"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D2row $MOVE Release1String 
+3 LINE.NUM *_HSV_SEMA Acquire1String " MM/DD/YYYY"  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND " hh:mm:ss"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Biogas"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Temp (C)"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " pH"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D3row $MOVE Release1String 
+4 LINE.NUM *_HSV_SEMA Acquire1String " MM/DD/YYYY"  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND " hh:mm:ss"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Biogas"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Temp (C)"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " pH"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND 
+*_HSV_TEMP *D4row $MOVE Release1String 
+5 LINE.NUM *_HSV_SEMA Acquire1String " MM/DD/YYYY"  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND " hh:mm:ss"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Biogas"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Temp (C)"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " pH"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D5row $MOVE Release1String 
+6 LINE.NUM *_HSV_SEMA Acquire1String " MM/DD/YYYY"  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND " hh:mm:ss"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Biogas"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Temp (C)"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " pH"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D6row $MOVE Release1String 
+7 LINE.NUM *_HSV_SEMA Acquire1String " MM/DD/YYYY"  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND " hh:mm:ss"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Biogas"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Temp (C)"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " pH"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 
+10  *_HSV_TEMP $APPEND *_HSV_TEMP *D7row $MOVE Release1String 
+8 LINE.NUM *_HSV_SEMA Acquire1String " MM/DD/YYYY"  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND " hh:mm:ss"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Biogas"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Temp (C)"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " pH"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D8row $MOVE Release1String 
+-2 JUMP ;
+: 22_88
+
+1 LINE.NUM
+  ^FM1_counts @@ 
+  50    *
+  ^FM1_biogas @! 
+
+2 LINE.NUM
+  ^FM2_counts @@ 
+  50    *
+  ^FM2_biogas @! 
+
+3 LINE.NUM
+  ^FM3_counts @@ 
+  50    *
+  ^FM3_biogas @! 
+
+4 LINE.NUM
+  ^FM4_counts @@ 
+  50    *
+  ^FM4_biogas @! 
+
+5 LINE.NUM
+  ^FM5_counts @@ 
+  50    *
+  ^FM5_biogas @! 
+
+6 LINE.NUM
+  ^FM6_counts @@ 
+  50    *
+  ^FM6_biogas @! 
+
+7 LINE.NUM
+  ^FM7_counts @@ 
+  50    *
+  ^FM7_biogas @! 
+
+8 LINE.NUM
+  ^FM8_counts @@ 
+  50    *
+  ^FM8_biogas @! 
+2 JUMP ;
+: 22_92
+
+1 LINE.NUM
+  ^FM1_biogas_day @@ 
+  ^FM1_biogas @@   +
+  ^FM1_biogas_day @! 
+
+2 LINE.NUM
+  ^FM2_biogas_day @@ 
+  ^FM2_biogas @@   +
+  ^FM2_biogas_day @! 
+
+3 LINE.NUM
+  ^FM3_biogas_day @@ 
+  ^FM3_biogas @@   +
+  ^FM3_biogas_day @! 
+
+4 LINE.NUM
+  ^FM4_biogas_day @@ 
+  ^FM4_biogas @@   +
+  ^FM4_biogas_day @! 
+
+5 LINE.NUM
+  ^FM5_biogas_day @@ 
+  ^FM5_biogas @@   +
+  ^FM5_biogas_day @! 
+
+6 LINE.NUM
+  ^FM6_biogas_day @@ 
+  ^FM6_biogas @@   +
+  ^FM6_biogas_day @! 
+
+7 LINE.NUM
+  ^FM7_biogas_day @@ 
+  ^FM7_biogas @@   +
+  ^FM7_biogas_day @! 
+
+8 LINE.NUM
+  ^FM8_biogas_day @@ 
+  ^FM8_biogas @@   +
+  ^FM8_biogas_day @! 
+7 JUMP ;
+: 22_97
+
+1 LINE.NUM
+  ^FM1_biogas_day @@ 
+  0    *
+  ^FM1_biogas_day @! 
+
+2 LINE.NUM
+  ^FM2_biogas_day @@ 
+  0    *
+  ^FM2_biogas_day @! 
+
+3 LINE.NUM
+  ^FM3_biogas_day @@ 
+  0    *
+  ^FM3_biogas_day @! 
+
+4 LINE.NUM
+  ^FM4_biogas_day @@ 
+  0    *
+  ^FM4_biogas_day @! 
+
+5 LINE.NUM
+  ^FM5_biogas_day @@ 
+  0    *
+  ^FM5_biogas_day @! 
+
+6 LINE.NUM
+  ^FM6_biogas_day @@ 
+  0    *
+  ^FM6_biogas_day @! 
+
+7 LINE.NUM
+  ^FM7_biogas_day @@ 
+  0    *
+  ^FM7_biogas_day @! 
+
+8 LINE.NUM
+  ^FM8_biogas_day @@ 
+  0    *
+  ^FM8_biogas_day @! 
+-18 JUMP ;
+: 22_105
+
+1 LINE.NUM
+  ^FM1_counts @@ 
+  0    *
+  ^FM1_counts @! 
+
+2 LINE.NUM
+  ^FM2_counts @@ 
+  0    *
+  ^FM2_counts @! 
+
+3 LINE.NUM
+  ^FM3_counts @@ 
+  0    *
+  ^FM3_counts @! 
+
+4 LINE.NUM
+  ^FM4_counts @@ 
+  0    *
+  ^FM4_counts @! 
+
+5 LINE.NUM
+  ^FM5_counts @@ 
+  0    *
+  ^FM5_counts @! 
+
+6 LINE.NUM
+  ^FM6_counts @@ 
+  0    *
+  ^FM6_counts @! 
+
+7 LINE.NUM
+  ^FM7_counts @@ 
+  0    *
+  ^FM7_counts @! 
+
+8 LINE.NUM
+  ^FM8_counts @@ 
+  0    *
+  ^FM8_counts @! 
+-3 JUMP ;
+: 22_12
+FALSE
+
+1 LINE.NUM
+  ^Quarter @@ 
+  0    =
+LOR
+
+2 LINE.NUM
+  ^Quarter @@ 
+  15    =
+LOR
+
+3 LINE.NUM
+  ^Quarter @@ 
+  30    =
+LOR
+
+4 LINE.NUM
+  ^Quarter @@ 
+  45    =
+LOR
+IF -23 ELSE -22 THEN JUMP ;
+: 22_44
+TRUE
+
+1 LINE.NUM
+  *D1txt   ?OPEN 0>
+LAND
+
+2 LINE.NUM
+  *D2txt   ?OPEN 0>
+LAND
+
+3 LINE.NUM
+  *D3txt   ?OPEN 0>
+LAND
+
+4 LINE.NUM
+  *D4txt   ?OPEN 0>
+LAND
+
+5 LINE.NUM
+  *D5txt   ?OPEN 0>
+LAND
+
+6 LINE.NUM
+  *D6txt   ?OPEN 0>
+LAND
+
+7 LINE.NUM
+  *D7txt   ?OPEN 0>
+LAND
+
+8 LINE.NUM
+  *D8txt   ?OPEN 0>
+LAND
+IF -11 ELSE -13 THEN JUMP ;
+: 22_53
+FALSE
+
+1 LINE.NUM
+  *D1txt   ?OPEN 0>
+LOR
+
+2 LINE.NUM
+  *D2txt   ?OPEN 0>
+LOR
+
+3 LINE.NUM
+  *D3txt   ?OPEN 0>
+LOR
+
+4 LINE.NUM
+  *D4txt   ?OPEN 0>
+LOR
+
+5 LINE.NUM
+  *D5txt   ?OPEN 0>
+LOR
+
+6 LINE.NUM
+  *D6txt   ?OPEN 0>
+LOR
+
+7 LINE.NUM
+  *D7txt   ?OPEN 0>
+LOR
+
+8 LINE.NUM
+  *D8txt   ?OPEN 0>
+LOR
+IF -13 ELSE -28 THEN JUMP ;
+: 22_61
+FALSE
+
+1 LINE.NUM
+  *D1txt   ?OPEN 0>
+LOR
+
+2 LINE.NUM
+  *D2txt   ?OPEN 0>
+LOR
+
+3 LINE.NUM
+  *D3txt   ?OPEN 0>
+LOR
+
+4 LINE.NUM
+  *D4txt   ?OPEN 0>
+LOR
+
+5 LINE.NUM
+  *D5txt   ?OPEN 0>
+LOR
+
+6 LINE.NUM
+  *D6txt   ?OPEN 0>
+LOR
+
+7 LINE.NUM
+  *D7txt   ?OPEN 0>
+LOR
+
+8 LINE.NUM
+  *D8txt   ?OPEN 0>
+LOR
+IF -11 ELSE 2 THEN JUMP ;
+: 22_69
+TRUE
+
+1 LINE.NUM
+  *D1txt   ?OPEN 0>
+LAND
+
+2 LINE.NUM
+  *D2txt   ?OPEN 0>
+LAND
+
+3 LINE.NUM
+  *D3txt   ?OPEN 0>
+LAND
+
+4 LINE.NUM
+  *D4txt   ?OPEN 0>
+LAND
+
+5 LINE.NUM
+  *D5txt   ?OPEN 0>
+LAND
+
+6 LINE.NUM
+  *D6txt   ?OPEN 0>
+LAND
+
+7 LINE.NUM
+  *D7txt   ?OPEN 0>
+LAND
+
+8 LINE.NUM
+  *D8txt   ?OPEN 0>
+LAND
+IF -13 ELSE -11 THEN JUMP ;
+: 22_94
+FALSE
+
+1 LINE.NUM
+  ^Since_midnight @@ 
+  0    =
+LOR
+IF -8 ELSE -25 THEN JUMP ;
+T: T22
+DUMMY
+22_0
+22_3
+22_5
+22_9
+22_10
+22_11
+22_13
+22_21
+22_23
+22_26
+22_27
+22_28
+22_32
+22_33
+22_34
+22_35
+22_45
+22_50
+22_51
+22_63
+22_64
+22_68
+22_84
+22_88
+22_92
+22_97
+22_105
+22_12
+22_44
+22_53
+22_61
+22_69
+22_94
+T;
+&Data_logging ' T22 SETTASK

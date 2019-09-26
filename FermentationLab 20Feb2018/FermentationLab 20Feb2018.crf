@@ -1,0 +1,5039 @@
+
+\ ********************** PER File **********************
+
+?EXISTS DL.STAT SWAP DROP .IF 1 DL.STAT .THEN
+_END NEW $$$.RUN FORGET $$$.RUN
+GetPersistentTop  **FermentationLab*20Feb2018**
+PersistentMAKECHECK
+
+\ ********************** CRN File **********************
+
+_END NEW $$$.RUN
+: FILENAME  ." FermentationLab 20Feb2018 " ;
+1 0 $VAR *_HSV_SEMA 
+1024 0 $VAR *_HSV_TEMP 
+200 0 $VAR *_HSV_INIT_IO 
+0 IVAR ^_HNV_INIT_IO 
+0 TASK  &_INIT_IO
+0 TASK &Biogas1
+0 TASK &Biogas2
+0 TASK &Biogas3
+0 TASK &Biogas4
+0 TASK &Biogas5
+0 TASK &Biogas6
+0 TASK &Biogas7
+0 TASK &Biogas8
+0 TASK &Data_logging
+0 TASK &Feed1
+0 TASK &Feed2
+0 TASK &Feed3
+0 TASK &Feed4
+0 TASK &Feed5
+0 TASK &Feed6
+0 TASK &Feed7
+0 TASK &Feed8
+0 TASK &Powerup
+0 TASK &Probes
+0 TASK &Recirculation1
+0 TASK &Recirculation2
+0 TASK &Recirculation3
+0 TASK &Recirculation4
+0 TASK &Recirculation5
+0 TASK &Recirculation6
+0 TASK &Recirculation7
+0 TASK &Recirculation8
+1073741824 FVAR ^D1_Feed
+0 FVAR ^D1_FM
+0 IVAR ^D1_HRT
+0 FVAR ^D1_pH
+0 FVAR ^D1_Temp
+1073741824 FVAR ^D2_Feed
+0 FVAR ^D2_FM
+0 IVAR ^D2_HRT
+0 FVAR ^D2_pH
+0 FVAR ^D2_Temp
+1073741824 FVAR ^D3_Feed
+0 FVAR ^D3_FM
+0 IVAR ^D3_HRT
+0 FVAR ^D3_pH
+0 FVAR ^D3_Temp
+1073741824 FVAR ^D4_Feed
+0 FVAR ^D4_FM
+0 IVAR ^D4_HRT
+0 FVAR ^D4_pH
+0 FVAR ^D4_Temp
+1073741824 FVAR ^D5_Feed
+0 FVAR ^D5_FM
+0 IVAR ^D5_HRT
+0 FVAR ^D5_pH
+0 FVAR ^D5_Temp
+1073741824 FVAR ^D6_Feed
+0 FVAR ^D6_FM
+0 IVAR ^D6_HRT
+0 FVAR ^D6_pH
+0 FVAR ^D6_Temp
+1073741824 FVAR ^D7_Feed
+0 FVAR ^D7_FM
+0 IVAR ^D7_HRT
+0 FVAR ^D7_pH
+0 FVAR ^D7_Temp
+1073741824 FVAR ^D8_Feed
+0 FVAR ^D8_FM
+0 IVAR ^D8_HRT
+0 FVAR ^D8_pH
+0 FVAR ^D8_Temp
+0 FVAR ^D9_pH
+0 FVAR ^D9_Temp
+0 FVAR ^F1_day
+0 TVAR ^F1_off
+0 TVAR ^F1_on
+1073741824 FVAR ^F1_pulses
+0 FVAR ^F2_day
+0 TVAR ^F2_off
+0 TVAR ^F2_on
+1073741824 FVAR ^F2_pulses
+0 FVAR ^F3_day
+0 TVAR ^F3_off
+0 TVAR ^F3_on
+0 FVAR ^F3_pulses
+0 FVAR ^F4_day
+0 TVAR ^F4_off
+0 TVAR ^F4_on
+1073741824 FVAR ^F4_pulses
+0 FVAR ^F5_day
+0 TVAR ^F5_off
+0 TVAR ^F5_on
+0 FVAR ^F5_pulses
+0 FVAR ^F6_day
+0 TVAR ^F6_off
+0 TVAR ^F6_on
+0 FVAR ^F6_pulses
+0 FVAR ^F7_day
+0 TVAR ^F7_off
+0 TVAR ^F7_on
+0 FVAR ^F7_pulses
+0 FVAR ^F8_day
+0 TVAR ^F8_off
+0 TVAR ^F8_on
+0 FVAR ^F8_pulses
+0 IVAR ^FM1_biogas
+0 IVAR ^FM1_biogas_day
+0 IVAR ^FM1_counts
+0 IVAR ^FM2_biogas
+0 IVAR ^FM2_biogas_day
+0 IVAR ^FM2_counts
+0 IVAR ^FM3_biogas
+0 IVAR ^FM3_biogas_day
+0 IVAR ^FM3_counts
+0 IVAR ^FM4_biogas
+0 IVAR ^FM4_biogas_day
+0 IVAR ^FM4_counts
+0 IVAR ^FM5_biogas
+0 IVAR ^FM5_biogas_day
+0 IVAR ^FM5_counts
+0 IVAR ^FM6_biogas
+0 IVAR ^FM6_biogas_day
+0 IVAR ^FM6_counts
+0 IVAR ^FM7_biogas
+0 IVAR ^FM7_biogas_day
+0 IVAR ^FM7_counts
+0 IVAR ^FM8_biogas
+0 IVAR ^FM8_biogas_day
+0 IVAR ^FM8_counts
+0 IVAR ^FM9_counts
+0 IVAR ^Quarter
+0 TVAR ^R1_off
+0 TVAR ^R1_on
+0 TVAR ^R2_off
+0 TVAR ^R2_on
+0 TVAR ^R3_off
+0 TVAR ^R3_on
+0 TVAR ^R4_off
+0 TVAR ^R4_on
+0 TVAR ^R5_off
+0 TVAR ^R5_on
+0 TVAR ^R6_off
+0 TVAR ^R6_on
+0 TVAR ^R7_off
+0 TVAR ^R7_on
+0 TVAR ^R8_off
+0 TVAR ^R8_on
+0 IVAR ^sD1txt
+0 IVAR ^sD2txt
+0 IVAR ^sD3txt
+0 IVAR ^sD4txt
+0 IVAR ^sD5txt
+0 IVAR ^sD6txt
+0 IVAR ^sD7txt
+0 IVAR ^sD8txt
+0 IVAR ^Since_midnight
+0 FVAR ^status_Biogas1
+0 FVAR ^status_Biogas2
+0 FVAR ^status_Biogas3
+0 FVAR ^status_Biogas4
+0 FVAR ^status_Biogas5
+0 FVAR ^status_Biogas6
+0 FVAR ^status_Biogas7
+0 FVAR ^status_Biogas8
+0 IVAR ^status_Data_logging
+0 IVAR ^status_Feed1
+0 IVAR ^status_Feed2
+0 IVAR ^status_Feed3
+0 IVAR ^status_Feed4
+0 IVAR ^status_Feed5
+0 IVAR ^status_Feed6
+0 IVAR ^status_Feed7
+0 IVAR ^status_Feed8
+0 IVAR ^status_log
+0 IVAR ^status_Probes
+0 IVAR ^status_Recirculation
+0 IVAR ^status_Recirculation1
+0 IVAR ^status_Recirculation2
+0 IVAR ^status_Recirculation3
+0 IVAR ^status_Recirculation4
+0 IVAR ^status_Recirculation5
+0 IVAR ^status_Recirculation6
+0 IVAR ^status_Recirculation7
+0 IVAR ^status_Recirculation8
+50 0 $VAR *D1row 
+50 0 $VAR *D2row 
+50 0 $VAR *D3row 
+50 0 $VAR *D4row 
+50 0 $VAR *D5row 
+50 0 $VAR *D6row 
+50 0 $VAR *D7row 
+50 0 $VAR *D8row 
+10 0 $VAR *Date 
+4 0 $VAR *sD1_pH 
+4 0 $VAR *sD1_Temp 
+4 0 $VAR *sD2_pH 
+4 0 $VAR *sD2_Temp 
+4 0 $VAR *sD3_pH 
+4 0 $VAR *sD3_Temp 
+4 0 $VAR *sD4_pH 
+4 0 $VAR *sD4_Temp 
+4 0 $VAR *sD5_pH 
+4 0 $VAR *sD5_Temp 
+4 0 $VAR *sD6_pH 
+4 0 $VAR *sD6_Temp 
+4 0 $VAR *sD7_pH 
+4 0 $VAR *sD7_Temp 
+4 0 $VAR *sD8_pH 
+4 0 $VAR *sD8_Temp 
+4 0 $VAR *sD9_pH 
+4 0 $VAR *sD9_Temp 
+3 0 $VAR *sFM1_counts 
+3 0 $VAR *sFM2_counts 
+3 0 $VAR *sFM3_counts 
+3 0 $VAR *sFM4_counts 
+3 0 $VAR *sFM5_counts 
+3 0 $VAR *sFM6_counts 
+3 0 $VAR *sFM7_counts 
+3 0 $VAR *sFM8_counts 
+3 0 $VAR *sFM9_counts 
+50 0 $VAR *string_log 
+8 0 $VAR *Time 
+1024 1073741824 COMVAR *D1txt 
+1024 1073741824 COMVAR *D2txt 
+1024 1073741824 COMVAR *D3txt 
+1024 0 COMVAR *D4txt 
+1024 0 COMVAR *D5txt 
+1024 0 COMVAR *D6txt 
+1024 0 COMVAR *D7txt 
+1024 0 COMVAR *D8txt 
+1024 0 COMVAR *log 
+
+nullM64BOARD $FFFFFFFE $FFFFFFFE 16 32769 1.000000 0.010000 0.000000 2001 $A9FE523F 0 11 BOARD.MMP %Upper
+ 4 $80000003 SPOINT 0.0    OUTPUT  0  0 %Upper 0 POINT.TNG ~F1
+ 4 $80000003 SPOINT 0.0    OUTPUT  1  0 %Upper 0 POINT.TNG ~F2
+ 4 $80000003 SPOINT 0.0    OUTPUT  2  0 %Upper 0 POINT.TNG ~F3
+ 4 $80000003 SPOINT 0.0    OUTPUT  3  0 %Upper 0 POINT.TNG ~F4
+ 4 $80000003 SPOINT 0.0    OUTPUT  0  1 %Upper 0 POINT.TNG ~F5
+ 4 $80000003 SPOINT 0.0    OUTPUT  1  1 %Upper 0 POINT.TNG ~F6
+ 4 $80000003 SPOINT 0.0    OUTPUT  2  1 %Upper 0 POINT.TNG ~F7
+ 4 $80000003 SPOINT 0.0    OUTPUT  3  1 %Upper 0 POINT.TNG ~F8
+ 4 $80000003 SPOINT 0.0    OUTPUT  0  2 %Upper 0 POINT.TNG ~R8
+ 4 $80000003 SPOINT 0.0    OUTPUT  1  2 %Upper 0 POINT.TNG ~R1
+ 4 $80000003 SPOINT 0.0    OUTPUT  2  2 %Upper 0 POINT.TNG ~R2
+ 4 $80000003 SPOINT 0.0    OUTPUT  3  2 %Upper 0 POINT.TNG ~R3
+ 4 $80000003 SPOINT 0.0    OUTPUT  0  3 %Upper 0 POINT.TNG ~R4
+ 4 $80000003 SPOINT 0.0    OUTPUT  1  3 %Upper 0 POINT.TNG ~R5
+ 4 $80000003 SPOINT 0.0    OUTPUT  2  3 %Upper 0 POINT.TNG ~R6
+ 4 $80000003 SPOINT 0.0    OUTPUT  3  3 %Upper 0 POINT.TNG ~R7
+ 2 $40000001 APOINT  -10.0000 12  0  4 %Upper 0 POINT.TNG ~FM1
+ 2 $40000001 APOINT  -10.0000 12  1  4 %Upper 0 POINT.TNG ~FM2
+ 2 $40000001 APOINT  -10.0000 12  0  5 %Upper 0 POINT.TNG ~FM3
+ 2 $40000001 APOINT  -10.0000 12  1  5 %Upper 0 POINT.TNG ~FM4
+ 2 $40000001 APOINT  -10.0000 12  0  6 %Upper 0 POINT.TNG ~FM5
+ 2 $40000001 APOINT  -10.0000 12  1  6 %Upper 0 POINT.TNG ~FM6
+ 2 $40000001 APOINT  -10.0000 12  0  7 %Upper 0 POINT.TNG ~FM7
+ 2 $40000001 APOINT  -10.0000 12  1  7 %Upper 0 POINT.TNG ~FM8
+ 2 $40000001 APOINT  -21.0000 64  0  8 %Upper 0 POINT.TNG ~PH1
+  14.0000  -21.0000 ~PH1 SET.SCALE
+ 2 $40000001 APOINT  -21.0000 64  1  8 %Upper 0 POINT.TNG ~PH2
+  14.0000  -21.0000 ~PH2 SET.SCALE
+ 2 $40000001 APOINT  -21.0000 64  0  9 %Upper 0 POINT.TNG ~PH3
+  14.0000  -21.0000 ~PH3 SET.SCALE
+ 2 $40000001 APOINT  -21.0000 64  1  9 %Upper 0 POINT.TNG ~PH4
+  14.0000  -21.0000 ~PH4 SET.SCALE
+ 2 $40000001 APOINT  -21.0000 64  0 10 %Upper 0 POINT.TNG ~PH5
+  14.0000  -21.0000 ~PH5 SET.SCALE
+ 2 $40000001 APOINT  -21.0000 64  1 10 %Upper 0 POINT.TNG ~PH6
+  14.0000  -21.0000 ~PH6 SET.SCALE
+ 2 $40000001 APOINT  -21.0000 64  0 11 %Upper 0 POINT.TNG ~PH7
+  14.0000  -21.0000 ~PH7 SET.SCALE
+ 2 $40000001 APOINT  -21.0000 64  1 11 %Upper 0 POINT.TNG ~PH8
+  14.0000  -21.0000 ~PH8 SET.SCALE
+ 2 $40000001 APOINT -210.0000 5  0 12 %Upper 0 POINT.TNG ~T1
+ 2 $40000001 APOINT -210.0000 5  1 12 %Upper 0 POINT.TNG ~T2
+ 2 $40000001 APOINT -210.0000 5  0 13 %Upper 0 POINT.TNG ~T3
+ 2 $40000001 APOINT -210.0000 5  1 13 %Upper 0 POINT.TNG ~T4
+ 2 $40000001 APOINT -210.0000 5  0 14 %Upper 0 POINT.TNG ~T5
+ 2 $40000001 APOINT -210.0000 5  1 14 %Upper 0 POINT.TNG ~T6
+ 2 $40000001 APOINT -210.0000 5  0 15 %Upper 0 POINT.TNG ~T7
+ 2 $40000001 APOINT -210.0000 5  1 15 %Upper 0 POINT.TNG ~T8
+: 1_0
+1 JUMP ;
+: 1_2
+
+1 LINE.NUM
+  ^FM1_counts   1+@!
+
+2 LINE.NUM
+  4.0    FDELAY
+0 JUMP ;
+: 1_1
+TRUE
+
+1 LINE.NUM
+  ~FM1 @@ 
+  1.8    F<
+LAND
+IF -2 ELSE -1 THEN JUMP ;
+T: T1
+DUMMY
+1_0
+1_2
+1_1
+T;
+&Biogas1 ' T1 SETTASK
+: 3_0
+1 JUMP ;
+: 3_6
+
+1 LINE.NUM
+  ^FM2_counts   1+@!
+
+2 LINE.NUM
+  4.0    FDELAY
+0 JUMP ;
+: 3_7
+TRUE
+
+1 LINE.NUM
+  ~FM2 @@ 
+  1.8    F<
+LAND
+IF -2 ELSE -1 THEN JUMP ;
+T: T3
+DUMMY
+3_0
+3_6
+3_7
+T;
+&Biogas2 ' T3 SETTASK
+: 4_0
+1 JUMP ;
+: 4_2
+
+1 LINE.NUM
+  ^FM3_counts   1+@!
+
+2 LINE.NUM
+  4.0    FDELAY
+0 JUMP ;
+: 4_1
+TRUE
+
+1 LINE.NUM
+  ~FM3 @@ 
+  1.8    F<
+LAND
+IF -2 ELSE -1 THEN JUMP ;
+T: T4
+DUMMY
+4_0
+4_2
+4_1
+T;
+&Biogas3 ' T4 SETTASK
+: 5_0
+1 JUMP ;
+: 5_6
+
+1 LINE.NUM
+  ^FM4_counts   1+@!
+
+2 LINE.NUM
+  4.0    FDELAY
+0 JUMP ;
+: 5_7
+TRUE
+
+1 LINE.NUM
+  ~FM4 @@ 
+  1.8    F<
+LAND
+IF -2 ELSE -1 THEN JUMP ;
+T: T5
+DUMMY
+5_0
+5_6
+5_7
+T;
+&Biogas4 ' T5 SETTASK
+: 6_0
+1 JUMP ;
+: 6_2
+
+1 LINE.NUM
+  ^FM5_counts   1+@!
+
+2 LINE.NUM
+  4.0    FDELAY
+0 JUMP ;
+: 6_1
+TRUE
+
+1 LINE.NUM
+  ~FM5 @@ 
+  1.8    F<
+LAND
+IF -2 ELSE -1 THEN JUMP ;
+T: T6
+DUMMY
+6_0
+6_2
+6_1
+T;
+&Biogas5 ' T6 SETTASK
+: 7_0
+1 JUMP ;
+: 7_6
+
+1 LINE.NUM
+  ^FM6_counts   1+@!
+
+2 LINE.NUM
+  4.0    FDELAY
+0 JUMP ;
+: 7_7
+TRUE
+
+1 LINE.NUM
+  ~FM6 @@ 
+  1.8    F<
+LAND
+IF -1 ELSE -2 THEN JUMP ;
+T: T7
+DUMMY
+7_0
+7_6
+7_7
+T;
+&Biogas6 ' T7 SETTASK
+: 8_0
+1 JUMP ;
+: 8_2
+
+1 LINE.NUM
+  ^FM7_counts   1+@!
+
+2 LINE.NUM
+  4.0    FDELAY
+0 JUMP ;
+: 8_1
+TRUE
+
+1 LINE.NUM
+  ~FM7 @@ 
+  1.8    F<
+LAND
+IF -2 ELSE -1 THEN JUMP ;
+T: T8
+DUMMY
+8_0
+8_2
+8_1
+T;
+&Biogas7 ' T8 SETTASK
+: 9_0
+1 JUMP ;
+: 9_6
+
+1 LINE.NUM
+  ^FM8_counts   1+@!
+
+2 LINE.NUM
+  4.0    FDELAY
+0 JUMP ;
+: 9_7
+TRUE
+
+1 LINE.NUM
+  ~FM8 @@ 
+  1.8    F<
+LAND
+IF -2 ELSE -1 THEN JUMP ;
+T: T9
+DUMMY
+9_0
+9_6
+9_7
+T;
+&Biogas8 ' T9 SETTASK
+: 22_0
+5 JUMP ;
+: 22_3
+4 JUMP ;
+: 22_5
+
+1 LINE.NUM
+  60.0    FDELAY
+-2 JUMP ;
+: 22_9
+
+1 LINE.NUM
+  ^D1_Temp @@ 
+  4  
+  1  
+  *sD1_Temp   FF.R$
+
+2 LINE.NUM
+  ^D2_Temp @@ 
+  4  
+  1  
+  *sD2_Temp   FF.R$
+
+3 LINE.NUM
+  ^D3_Temp @@ 
+  4  
+  1  
+  *sD3_Temp   FF.R$
+
+4 LINE.NUM
+  ^D4_Temp @@ 
+  4  
+  1  
+  *sD4_Temp   FF.R$
+
+5 LINE.NUM
+  ^D5_Temp @@ 
+  4  
+  1  
+  *sD5_Temp   FF.R$
+
+6 LINE.NUM
+  ^D6_Temp @@ 
+  4  
+  1  
+  *sD6_Temp   FF.R$
+
+7 LINE.NUM
+  ^D7_Temp @@ 
+  4  
+  1  
+  *sD7_Temp   FF.R$
+
+8 LINE.NUM
+  ^D8_Temp @@ 
+  4  
+  1  
+  *sD8_Temp   FF.R$
+
+9 LINE.NUM
+  ^D9_Temp @@ 
+  4  
+  1  
+  *sD9_Temp   FF.R$
+3 JUMP ;
+: 22_10
+
+1 LINE.NUM
+  ^D1_pH @@ 
+  4  
+  1  
+  *sD1_pH   FF.R$
+
+2 LINE.NUM
+  ^D2_pH @@ 
+  4  
+  1  
+  *sD2_pH   FF.R$
+
+3 LINE.NUM
+  ^D3_pH @@ 
+  4  
+  1  
+  *sD3_pH   FF.R$
+
+4 LINE.NUM
+  ^D4_pH @@ 
+  4  
+  1  
+  *sD4_pH   FF.R$
+
+5 LINE.NUM
+  ^D5_pH @@ 
+  4  
+  1  
+  *sD5_pH   FF.R$
+
+6 LINE.NUM
+  ^D6_pH @@ 
+  4  
+  1  
+  *sD6_pH   FF.R$
+
+7 LINE.NUM
+  ^D7_pH @@ 
+  4  
+  1  
+  *sD7_pH   FF.R$
+
+8 LINE.NUM
+  ^D8_pH @@ 
+  4  
+  1  
+  *sD8_pH   FF.R$
+
+9 LINE.NUM
+  ^D9_pH @@ 
+  4  
+  1  
+  *sD9_pH   FF.R$
+-2 JUMP ;
+: 22_11
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 22_13
+
+1 LINE.NUM
+ SinceMidnight  ^Since_midnight @! 
+
+2 LINE.NUM
+ TIME@ DROP SWAP DROP  ^Quarter @! 
+
+3 LINE.NUM
+  10    DELAY
+20 JUMP ;
+: 22_21
+
+1 LINE.NUM
+  ^FM1_counts @@F 
+  3  
+  0  
+  *sFM1_counts   FF.R$
+
+2 LINE.NUM
+  ^FM2_counts @@F 
+  3  
+  0  
+  *sFM2_counts   FF.R$
+
+3 LINE.NUM
+  ^FM3_counts @@F 
+  3  
+  0  
+  *sFM3_counts   FF.R$
+
+4 LINE.NUM
+  ^FM4_counts @@F 
+  3  
+  0  
+  *sFM4_counts   FF.R$
+
+5 LINE.NUM
+  ^FM5_counts @@F 
+  3  
+  0  
+  *sFM5_counts   FF.R$
+
+6 LINE.NUM
+  ^FM6_counts @@F 
+  3  
+  0  
+  *sFM6_counts   FF.R$
+
+7 LINE.NUM
+  ^FM7_counts @@F 
+  3  
+  0  
+  *sFM7_counts   FF.R$
+
+8 LINE.NUM
+  ^FM8_counts @@F 
+  3  
+  0  
+  *sFM8_counts   FF.R$
+15 JUMP ;
+: 22_23
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND *Time  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sFM1_counts  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD1_Temp  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD1_pH  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D1row $MOVE Release1String 
+0 JUMP ;
+: 22_26
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND *Time  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sFM2_counts  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD2_Temp  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD2_pH  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D2row $MOVE Release1String 
+0 JUMP ;
+: 22_27
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND *Time  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sFM3_counts  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD3_Temp  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD3_pH  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D3row $MOVE Release1String 
+0 JUMP ;
+: 22_28
+
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND *Time  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sFM4_counts  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD4_Temp  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD4_pH  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D4row $MOVE Release1String 
+3 JUMP ;
+: 22_32
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND *Time  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sFM8_counts  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD8_Temp  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD8_pH  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D8row $MOVE Release1String 
+3 JUMP ;
+: 22_33
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND *Time  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sFM7_counts  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD7_Temp  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD7_pH  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D7row $MOVE Release1String 
+-2 JUMP ;
+: 22_34
+
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND *Time  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sFM6_counts  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD6_Temp  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD6_pH  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D6row $MOVE Release1String 
+-2 JUMP ;
+: 22_35
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND *Time  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sFM5_counts  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD5_Temp  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND *sD5_pH  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D5row $MOVE Release1String 
+-2 JUMP ;
+: 22_45
+
+1 LINE.NUM
+  *D1txt   OPEN
+  ^sD1txt @! 
+
+2 LINE.NUM
+  *D2txt   OPEN
+  ^sD2txt @! 
+
+3 LINE.NUM
+  *D3txt   OPEN
+  ^sD3txt @! 
+
+4 LINE.NUM
+  *D4txt   OPEN
+  ^sD4txt @! 
+
+5 LINE.NUM
+  *D5txt   OPEN
+  ^sD5txt @! 
+
+6 LINE.NUM
+  *D6txt   OPEN
+  ^sD6txt @! 
+
+7 LINE.NUM
+  *D7txt   OPEN
+  ^sD7txt @! 
+
+8 LINE.NUM
+  *D8txt   OPEN
+  ^sD8txt @! 
+
+9 LINE.NUM
+  10    DELAY
+11 JUMP ;
+: 22_50
+
+1 LINE.NUM
+  *D1txt   CLOSE
+  ^sD1txt @! 
+
+2 LINE.NUM
+  *D2txt   CLOSE
+  ^sD2txt @! 
+
+3 LINE.NUM
+  *D3txt   CLOSE
+  ^sD3txt @! 
+
+4 LINE.NUM
+  *D4txt   CLOSE
+  ^sD4txt @! 
+
+5 LINE.NUM
+  *D5txt   CLOSE
+  ^sD5txt @! 
+
+6 LINE.NUM
+  *D6txt   CLOSE
+  ^sD6txt @! 
+
+7 LINE.NUM
+  *D7txt   CLOSE
+  ^sD7txt @! 
+
+8 LINE.NUM
+  *D8txt   CLOSE
+  ^sD8txt @! 
+
+9 LINE.NUM
+  10    DELAY
+11 JUMP ;
+: 22_51
+
+1 LINE.NUM
+  *D1row 
+  *D1txt   PRT$
+  ^sD1txt @! 
+
+2 LINE.NUM
+  *D2row 
+  *D2txt   PRT$
+  ^sD2txt @! 
+
+3 LINE.NUM
+  *D3row 
+  *D3txt   PRT$
+  ^sD3txt @! 
+
+4 LINE.NUM
+  *D4row 
+  *D4txt   PRT$
+  ^sD4txt @! 
+
+5 LINE.NUM
+  *D5row 
+  *D5txt   PRT$
+  ^sD5txt @! 
+
+6 LINE.NUM
+  *D6row 
+  *D6txt   PRT$
+  ^sD6txt @! 
+
+7 LINE.NUM
+  *D7row 
+  *D7txt   PRT$
+  ^sD7txt @! 
+
+8 LINE.NUM
+  *D8row 
+  *D8txt   PRT$
+  ^sD8txt @! 
+-2 JUMP ;
+: 22_63
+
+1 LINE.NUM
+  *D1row 
+  *D1txt   PRT$
+  ^sD1txt @! 
+
+2 LINE.NUM
+  *D2row 
+  *D2txt   PRT$
+  ^sD2txt @! 
+
+3 LINE.NUM
+  *D3row 
+  *D3txt   PRT$
+  ^sD3txt @! 
+
+4 LINE.NUM
+  *D4row 
+  *D4txt   PRT$
+  ^sD4txt @! 
+
+5 LINE.NUM
+  *D5row 
+  *D5txt   PRT$
+  ^sD5txt @! 
+
+6 LINE.NUM
+  *D6row 
+  *D6txt   PRT$
+  ^sD6txt @! 
+
+7 LINE.NUM
+  *D7row 
+  *D7txt   PRT$
+  ^sD7txt @! 
+
+8 LINE.NUM
+  *D8row 
+  *D8txt   PRT$
+  ^sD8txt @! 
+0 JUMP ;
+: 22_64
+
+1 LINE.NUM
+  *D1txt   CLOSE
+  ^sD1txt @! 
+
+2 LINE.NUM
+  *D2txt   CLOSE
+  ^sD2txt @! 
+
+3 LINE.NUM
+  *D3txt   CLOSE
+  ^sD3txt @! 
+
+4 LINE.NUM
+  *D4txt   CLOSE
+  ^sD4txt @! 
+
+5 LINE.NUM
+  *D5txt   CLOSE
+  ^sD5txt @! 
+
+6 LINE.NUM
+  *D6txt   CLOSE
+  ^sD6txt @! 
+
+7 LINE.NUM
+  *D7txt   CLOSE
+  ^sD7txt @! 
+
+8 LINE.NUM
+  *D8txt   CLOSE
+  ^sD8txt @! 
+
+9 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 22_68
+
+1 LINE.NUM
+  *D1txt   OPEN
+  ^sD1txt @! 
+
+2 LINE.NUM
+  *D2txt   OPEN
+  ^sD2txt @! 
+
+3 LINE.NUM
+  *D3txt   OPEN
+  ^sD3txt @! 
+
+4 LINE.NUM
+  *D4txt   OPEN
+  ^sD4txt @! 
+
+5 LINE.NUM
+  *D5txt   OPEN
+  ^sD5txt @! 
+
+6 LINE.NUM
+  *D6txt   OPEN
+  ^sD6txt @! 
+
+7 LINE.NUM
+  *D7txt   OPEN
+  ^sD7txt @! 
+
+8 LINE.NUM
+  *D8txt   OPEN
+  ^sD8txt @! 
+
+9 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 22_84
+1 LINE.NUM *_HSV_SEMA Acquire1String " MM/DD/YYYY"  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND " hh:mm:ss"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Biogas"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Temp (C)"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " pH"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D1row $MOVE 
+Release1String 
+2 LINE.NUM *_HSV_SEMA Acquire1String " MM/DD/YYYY"  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND " hh:mm:ss"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Biogas"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Temp (C)"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " pH"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D2row $MOVE Release1String 
+3 LINE.NUM *_HSV_SEMA Acquire1String " MM/DD/YYYY"  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND " hh:mm:ss"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Biogas"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Temp (C)"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " pH"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D3row $MOVE Release1String 
+4 LINE.NUM *_HSV_SEMA Acquire1String " MM/DD/YYYY"  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND " hh:mm:ss"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Biogas"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Temp (C)"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " pH"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND 
+*_HSV_TEMP *D4row $MOVE Release1String 
+5 LINE.NUM *_HSV_SEMA Acquire1String " MM/DD/YYYY"  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND " hh:mm:ss"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Biogas"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Temp (C)"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " pH"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D5row $MOVE Release1String 
+6 LINE.NUM *_HSV_SEMA Acquire1String " MM/DD/YYYY"  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND " hh:mm:ss"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Biogas"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Temp (C)"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " pH"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D6row $MOVE Release1String 
+7 LINE.NUM *_HSV_SEMA Acquire1String " MM/DD/YYYY"  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND " hh:mm:ss"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Biogas"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Temp (C)"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " pH"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 
+10  *_HSV_TEMP $APPEND *_HSV_TEMP *D7row $MOVE Release1String 
+8 LINE.NUM *_HSV_SEMA Acquire1String " MM/DD/YYYY"  *_HSV_TEMP $MOVE 9  *_HSV_TEMP $APPEND " hh:mm:ss"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Biogas"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " Temp (C)"  *_HSV_TEMP $CAT 9  *_HSV_TEMP $APPEND " pH"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *D8row $MOVE Release1String 
+-2 JUMP ;
+: 22_88
+
+1 LINE.NUM
+  ^FM1_counts @@ 
+  50    *
+  ^FM1_biogas @! 
+
+2 LINE.NUM
+  ^FM2_counts @@ 
+  50    *
+  ^FM2_biogas @! 
+
+3 LINE.NUM
+  ^FM3_counts @@ 
+  50    *
+  ^FM3_biogas @! 
+
+4 LINE.NUM
+  ^FM4_counts @@ 
+  50    *
+  ^FM4_biogas @! 
+
+5 LINE.NUM
+  ^FM5_counts @@ 
+  50    *
+  ^FM5_biogas @! 
+
+6 LINE.NUM
+  ^FM6_counts @@ 
+  50    *
+  ^FM6_biogas @! 
+
+7 LINE.NUM
+  ^FM7_counts @@ 
+  50    *
+  ^FM7_biogas @! 
+
+8 LINE.NUM
+  ^FM8_counts @@ 
+  50    *
+  ^FM8_biogas @! 
+2 JUMP ;
+: 22_92
+
+1 LINE.NUM
+  ^FM1_biogas_day @@ 
+  ^FM1_biogas @@   +
+  ^FM1_biogas_day @! 
+
+2 LINE.NUM
+  ^FM2_biogas_day @@ 
+  ^FM2_biogas @@   +
+  ^FM2_biogas_day @! 
+
+3 LINE.NUM
+  ^FM3_biogas_day @@ 
+  ^FM3_biogas @@   +
+  ^FM3_biogas_day @! 
+
+4 LINE.NUM
+  ^FM4_biogas_day @@ 
+  ^FM4_biogas @@   +
+  ^FM4_biogas_day @! 
+
+5 LINE.NUM
+  ^FM5_biogas_day @@ 
+  ^FM5_biogas @@   +
+  ^FM5_biogas_day @! 
+
+6 LINE.NUM
+  ^FM6_biogas_day @@ 
+  ^FM6_biogas @@   +
+  ^FM6_biogas_day @! 
+
+7 LINE.NUM
+  ^FM7_biogas_day @@ 
+  ^FM7_biogas @@   +
+  ^FM7_biogas_day @! 
+
+8 LINE.NUM
+  ^FM8_biogas_day @@ 
+  ^FM8_biogas @@   +
+  ^FM8_biogas_day @! 
+7 JUMP ;
+: 22_97
+
+1 LINE.NUM
+  ^FM1_biogas_day @@ 
+  0    *
+  ^FM1_biogas_day @! 
+
+2 LINE.NUM
+  ^FM2_biogas_day @@ 
+  0    *
+  ^FM2_biogas_day @! 
+
+3 LINE.NUM
+  ^FM3_biogas_day @@ 
+  0    *
+  ^FM3_biogas_day @! 
+
+4 LINE.NUM
+  ^FM4_biogas_day @@ 
+  0    *
+  ^FM4_biogas_day @! 
+
+5 LINE.NUM
+  ^FM5_biogas_day @@ 
+  0    *
+  ^FM5_biogas_day @! 
+
+6 LINE.NUM
+  ^FM6_biogas_day @@ 
+  0    *
+  ^FM6_biogas_day @! 
+
+7 LINE.NUM
+  ^FM7_biogas_day @@ 
+  0    *
+  ^FM7_biogas_day @! 
+
+8 LINE.NUM
+  ^FM8_biogas_day @@ 
+  0    *
+  ^FM8_biogas_day @! 
+-18 JUMP ;
+: 22_105
+
+1 LINE.NUM
+  ^FM1_counts @@ 
+  0    *
+  ^FM1_counts @! 
+
+2 LINE.NUM
+  ^FM2_counts @@ 
+  0    *
+  ^FM2_counts @! 
+
+3 LINE.NUM
+  ^FM3_counts @@ 
+  0    *
+  ^FM3_counts @! 
+
+4 LINE.NUM
+  ^FM4_counts @@ 
+  0    *
+  ^FM4_counts @! 
+
+5 LINE.NUM
+  ^FM5_counts @@ 
+  0    *
+  ^FM5_counts @! 
+
+6 LINE.NUM
+  ^FM6_counts @@ 
+  0    *
+  ^FM6_counts @! 
+
+7 LINE.NUM
+  ^FM7_counts @@ 
+  0    *
+  ^FM7_counts @! 
+
+8 LINE.NUM
+  ^FM8_counts @@ 
+  0    *
+  ^FM8_counts @! 
+-3 JUMP ;
+: 22_12
+FALSE
+
+1 LINE.NUM
+  ^Quarter @@ 
+  0    =
+LOR
+
+2 LINE.NUM
+  ^Quarter @@ 
+  15    =
+LOR
+
+3 LINE.NUM
+  ^Quarter @@ 
+  30    =
+LOR
+
+4 LINE.NUM
+  ^Quarter @@ 
+  45    =
+LOR
+IF -23 ELSE -22 THEN JUMP ;
+: 22_44
+TRUE
+
+1 LINE.NUM
+  *D1txt   ?OPEN 0>
+LAND
+
+2 LINE.NUM
+  *D2txt   ?OPEN 0>
+LAND
+
+3 LINE.NUM
+  *D3txt   ?OPEN 0>
+LAND
+
+4 LINE.NUM
+  *D4txt   ?OPEN 0>
+LAND
+
+5 LINE.NUM
+  *D5txt   ?OPEN 0>
+LAND
+
+6 LINE.NUM
+  *D6txt   ?OPEN 0>
+LAND
+
+7 LINE.NUM
+  *D7txt   ?OPEN 0>
+LAND
+
+8 LINE.NUM
+  *D8txt   ?OPEN 0>
+LAND
+IF -11 ELSE -13 THEN JUMP ;
+: 22_53
+FALSE
+
+1 LINE.NUM
+  *D1txt   ?OPEN 0>
+LOR
+
+2 LINE.NUM
+  *D2txt   ?OPEN 0>
+LOR
+
+3 LINE.NUM
+  *D3txt   ?OPEN 0>
+LOR
+
+4 LINE.NUM
+  *D4txt   ?OPEN 0>
+LOR
+
+5 LINE.NUM
+  *D5txt   ?OPEN 0>
+LOR
+
+6 LINE.NUM
+  *D6txt   ?OPEN 0>
+LOR
+
+7 LINE.NUM
+  *D7txt   ?OPEN 0>
+LOR
+
+8 LINE.NUM
+  *D8txt   ?OPEN 0>
+LOR
+IF -13 ELSE -28 THEN JUMP ;
+: 22_61
+FALSE
+
+1 LINE.NUM
+  *D1txt   ?OPEN 0>
+LOR
+
+2 LINE.NUM
+  *D2txt   ?OPEN 0>
+LOR
+
+3 LINE.NUM
+  *D3txt   ?OPEN 0>
+LOR
+
+4 LINE.NUM
+  *D4txt   ?OPEN 0>
+LOR
+
+5 LINE.NUM
+  *D5txt   ?OPEN 0>
+LOR
+
+6 LINE.NUM
+  *D6txt   ?OPEN 0>
+LOR
+
+7 LINE.NUM
+  *D7txt   ?OPEN 0>
+LOR
+
+8 LINE.NUM
+  *D8txt   ?OPEN 0>
+LOR
+IF -11 ELSE 2 THEN JUMP ;
+: 22_69
+TRUE
+
+1 LINE.NUM
+  *D1txt   ?OPEN 0>
+LAND
+
+2 LINE.NUM
+  *D2txt   ?OPEN 0>
+LAND
+
+3 LINE.NUM
+  *D3txt   ?OPEN 0>
+LAND
+
+4 LINE.NUM
+  *D4txt   ?OPEN 0>
+LAND
+
+5 LINE.NUM
+  *D5txt   ?OPEN 0>
+LAND
+
+6 LINE.NUM
+  *D6txt   ?OPEN 0>
+LAND
+
+7 LINE.NUM
+  *D7txt   ?OPEN 0>
+LAND
+
+8 LINE.NUM
+  *D8txt   ?OPEN 0>
+LAND
+IF -13 ELSE -11 THEN JUMP ;
+: 22_94
+FALSE
+
+1 LINE.NUM
+  ^Since_midnight @@ 
+  0    =
+LOR
+IF -8 ELSE -25 THEN JUMP ;
+T: T22
+DUMMY
+22_0
+22_3
+22_5
+22_9
+22_10
+22_11
+22_13
+22_21
+22_23
+22_26
+22_27
+22_28
+22_32
+22_33
+22_34
+22_35
+22_45
+22_50
+22_51
+22_63
+22_64
+22_68
+22_84
+22_88
+22_92
+22_97
+22_105
+22_12
+22_44
+22_53
+22_61
+22_69
+22_94
+T;
+&Data_logging ' T22 SETTASK
+: 12_0
+0 JUMP ;
+: 12_1
+
+1 LINE.NUM
+  ^D1_Feed @@ 
+  6.6    F/
+  ^F1_day @! 
+
+2 LINE.NUM
+  5000 I>F 
+  ^D1_Feed @@   F/
+  ^D1_HRT F@! 
+
+3 LINE.NUM
+  10    DELAY
+
+4 LINE.NUM
+  ^F1_day @@ 
+  ^F1_pulses @@   F/
+  ^F1_on @! 
+2 JUMP ;
+: 12_3
+
+1 LINE.NUM
+  ~F1   OFF
+
+2 LINE.NUM
+  ^F1_off   StartTimer
+8 JUMP ;
+: 12_4
+
+1 LINE.NUM
+  ~F1   ON
+
+2 LINE.NUM
+  ^F1_on   StartTimer
+6 JUMP ;
+: 12_14
+1 LINE.NUM 24 I>F ^F1_pulses @@ F/ 3600 I>F F* ^F1_off @! 
+-2 JUMP ;
+: 12_17
+
+1 LINE.NUM
+  10    DELAY
+11 JUMP ;
+: 12_25
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+0 JUMP ;
+: 12_26
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 12_29
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 12_31
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 1 ON"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+-2 JUMP ;
+: 12_33
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 12_38
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+0 JUMP ;
+: 12_40
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 1 OFF"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+0 JUMP ;
+: 12_42
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+6 JUMP ;
+: 12_45
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+6 JUMP ;
+: 12_46
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+-2 JUMP ;
+: 12_2
+TRUE
+
+1 LINE.NUM
+  ^F1_on   T0=
+LAND
+IF -15 ELSE -1 THEN JUMP ;
+: 12_5
+TRUE
+
+1 LINE.NUM
+  ^F1_off   T0=
+LAND
+IF -17 ELSE -13 THEN JUMP ;
+: 12_23
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -12 ELSE -3 THEN JUMP ;
+: 12_30
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -14 ELSE -12 THEN JUMP ;
+: 12_41
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -6 ELSE -8 THEN JUMP ;
+: 12_48
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -8 ELSE -5 THEN JUMP ;
+T: T12
+DUMMY
+12_0
+12_1
+12_3
+12_4
+12_14
+12_17
+12_25
+12_26
+12_29
+12_31
+12_33
+12_38
+12_40
+12_42
+12_45
+12_46
+12_2
+12_5
+12_23
+12_30
+12_41
+12_48
+T;
+&Feed1 ' T12 SETTASK
+: 10_0
+2 JUMP ;
+: 10_9
+
+1 LINE.NUM
+  ~F2   ON
+
+2 LINE.NUM
+  ^F2_on   StartTimer
+4 JUMP ;
+: 10_10
+
+1 LINE.NUM
+  ~F2   OFF
+
+2 LINE.NUM
+  ^F2_off   StartTimer
+12 JUMP ;
+: 10_12
+
+1 LINE.NUM
+  ^D2_Feed @@ 
+  7.05    F/
+  ^F2_day @! 
+
+2 LINE.NUM
+  5000 I>F 
+  ^D2_Feed @@   F/
+  ^D2_HRT F@! 
+
+3 LINE.NUM
+  10    DELAY
+
+4 LINE.NUM
+  ^F2_day @@ 
+  ^F2_pulses @@   F/
+  ^F2_on @! 
+0 JUMP ;
+: 10_14
+1 LINE.NUM 24 I>F ^F2_pulses @@ F/ 3600 I>F F* ^F2_off @! 
+-4 JUMP ;
+: 10_17
+
+1 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 10_21
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+0 JUMP ;
+: 10_23
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 2 ON"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+0 JUMP ;
+: 10_25
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 10_28
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 10_29
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+-2 JUMP ;
+: 10_42
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+0 JUMP ;
+: 10_43
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 10_46
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 10_48
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 2 OFF"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+-2 JUMP ;
+: 10_50
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 10_8
+TRUE
+
+1 LINE.NUM
+  ^F2_off   T0=
+LAND
+IF -14 ELSE -12 THEN JUMP ;
+: 10_11
+TRUE
+
+1 LINE.NUM
+  ^F2_on   T0=
+LAND
+IF -16 ELSE -1 THEN JUMP ;
+: 10_24
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -9 ELSE -11 THEN JUMP ;
+: 10_31
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -11 ELSE -3 THEN JUMP ;
+: 10_40
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -9 ELSE -5 THEN JUMP ;
+: 10_47
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -11 ELSE -9 THEN JUMP ;
+T: T10
+DUMMY
+10_0
+10_9
+10_10
+10_12
+10_14
+10_17
+10_21
+10_23
+10_25
+10_28
+10_29
+10_42
+10_43
+10_46
+10_48
+10_50
+10_8
+10_11
+10_24
+10_31
+10_40
+10_47
+T;
+&Feed2 ' T10 SETTASK
+: 13_0
+2 JUMP ;
+: 13_9
+
+1 LINE.NUM
+  ~F3   ON
+
+2 LINE.NUM
+  ^F3_on   StartTimer
+4 JUMP ;
+: 13_10
+
+1 LINE.NUM
+  ~F3   OFF
+
+2 LINE.NUM
+  ^F3_off   StartTimer
+12 JUMP ;
+: 13_12
+
+1 LINE.NUM
+  ^D3_Feed @@ 
+  6.42    F/
+  ^F3_day @! 
+
+2 LINE.NUM
+  5000 I>F 
+  ^D3_Feed @@   F/
+  ^D3_HRT F@! 
+
+3 LINE.NUM
+  10    DELAY
+
+4 LINE.NUM
+  ^F3_day @@ 
+  ^F3_pulses @@   F/
+  ^F3_on @! 
+0 JUMP ;
+: 13_14
+1 LINE.NUM 24 I>F ^F3_pulses @@ F/ 3600 I>F F* ^F3_off @! 
+-4 JUMP ;
+: 13_17
+
+1 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 13_22
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+0 JUMP ;
+: 13_24
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 3 ON"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+0 JUMP ;
+: 13_26
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 13_29
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 13_30
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+-2 JUMP ;
+: 13_43
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+0 JUMP ;
+: 13_44
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 13_47
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 13_49
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 3 OFF"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+-2 JUMP ;
+: 13_51
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 13_8
+TRUE
+
+1 LINE.NUM
+  ^F3_off   T0=
+LAND
+IF -14 ELSE -12 THEN JUMP ;
+: 13_11
+TRUE
+
+1 LINE.NUM
+  ^F3_on   T0=
+LAND
+IF -16 ELSE -1 THEN JUMP ;
+: 13_25
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -9 ELSE -11 THEN JUMP ;
+: 13_32
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -11 ELSE -3 THEN JUMP ;
+: 13_41
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -9 ELSE -5 THEN JUMP ;
+: 13_48
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -11 ELSE -9 THEN JUMP ;
+T: T13
+DUMMY
+13_0
+13_9
+13_10
+13_12
+13_14
+13_17
+13_22
+13_24
+13_26
+13_29
+13_30
+13_43
+13_44
+13_47
+13_49
+13_51
+13_8
+13_11
+13_25
+13_32
+13_41
+13_48
+T;
+&Feed3 ' T13 SETTASK
+: 14_0
+0 JUMP ;
+: 14_1
+
+1 LINE.NUM
+  ^D4_Feed @@ 
+  6.22    F/
+  ^F4_day @! 
+
+2 LINE.NUM
+  5000 I>F 
+  ^D4_Feed @@   F/
+  ^D4_HRT F@! 
+
+3 LINE.NUM
+  10    DELAY
+
+4 LINE.NUM
+  ^F4_day @@ 
+  ^F4_pulses @@   F/
+  ^F4_on @! 
+2 JUMP ;
+: 14_3
+
+1 LINE.NUM
+  ~F4   OFF
+
+2 LINE.NUM
+  ^F4_off   StartTimer
+12 JUMP ;
+: 14_4
+
+1 LINE.NUM
+  ~F4   ON
+
+2 LINE.NUM
+  ^F4_on   StartTimer
+2 JUMP ;
+: 14_14
+1 LINE.NUM 24 I>F ^F4_pulses @@ F/ 3600 I>F F* ^F4_off @! 
+-2 JUMP ;
+: 14_17
+
+1 LINE.NUM
+  10    DELAY
+11 JUMP ;
+: 14_21
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+0 JUMP ;
+: 14_23
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 4 ON"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+0 JUMP ;
+: 14_25
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 14_28
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 14_29
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+-2 JUMP ;
+: 14_42
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+0 JUMP ;
+: 14_43
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 14_46
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 14_48
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 4 OFF"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+-2 JUMP ;
+: 14_50
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 14_2
+TRUE
+
+1 LINE.NUM
+  ^F4_on   T0=
+LAND
+IF -15 ELSE -1 THEN JUMP ;
+: 14_5
+TRUE
+
+1 LINE.NUM
+  ^F4_off   T0=
+LAND
+IF -17 ELSE -13 THEN JUMP ;
+: 14_24
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -9 ELSE -11 THEN JUMP ;
+: 14_31
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -11 ELSE -4 THEN JUMP ;
+: 14_40
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -9 ELSE -4 THEN JUMP ;
+: 14_47
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -11 ELSE -9 THEN JUMP ;
+T: T14
+DUMMY
+14_0
+14_1
+14_3
+14_4
+14_14
+14_17
+14_21
+14_23
+14_25
+14_28
+14_29
+14_42
+14_43
+14_46
+14_48
+14_50
+14_2
+14_5
+14_24
+14_31
+14_40
+14_47
+T;
+&Feed4 ' T14 SETTASK
+: 15_0
+2 JUMP ;
+: 15_9
+
+1 LINE.NUM
+  ~F5   ON
+
+2 LINE.NUM
+  ^F5_on   StartTimer
+4 JUMP ;
+: 15_10
+
+1 LINE.NUM
+  ~F5   OFF
+
+2 LINE.NUM
+  ^F5_off   StartTimer
+12 JUMP ;
+: 15_12
+
+1 LINE.NUM
+  ^D5_Feed @@ 
+  6.28    F/
+  ^F5_day @! 
+
+2 LINE.NUM
+  5000 I>F 
+  ^D5_Feed @@   F/
+  ^D5_HRT F@! 
+
+3 LINE.NUM
+  10    DELAY
+
+4 LINE.NUM
+  ^F5_day @@ 
+  ^F5_pulses @@   F/
+  ^F5_on @! 
+0 JUMP ;
+: 15_14
+1 LINE.NUM 24 I>F ^F5_pulses @@ F/ 3600 I>F F* ^F5_off @! 
+-4 JUMP ;
+: 15_17
+
+1 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 15_21
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+0 JUMP ;
+: 15_23
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 5 ON"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+0 JUMP ;
+: 15_25
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 15_28
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 15_29
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+-2 JUMP ;
+: 15_42
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+0 JUMP ;
+: 15_43
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 15_46
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 15_48
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 5 OFF"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+-2 JUMP ;
+: 15_50
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 15_8
+TRUE
+
+1 LINE.NUM
+  ^F5_off   T0=
+LAND
+IF -14 ELSE -12 THEN JUMP ;
+: 15_11
+TRUE
+
+1 LINE.NUM
+  ^F5_on   T0=
+LAND
+IF -16 ELSE -1 THEN JUMP ;
+: 15_24
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -9 ELSE -11 THEN JUMP ;
+: 15_31
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -11 ELSE -3 THEN JUMP ;
+: 15_40
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -9 ELSE -5 THEN JUMP ;
+: 15_47
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -11 ELSE -9 THEN JUMP ;
+T: T15
+DUMMY
+15_0
+15_9
+15_10
+15_12
+15_14
+15_17
+15_21
+15_23
+15_25
+15_28
+15_29
+15_42
+15_43
+15_46
+15_48
+15_50
+15_8
+15_11
+15_24
+15_31
+15_40
+15_47
+T;
+&Feed5 ' T15 SETTASK
+: 16_0
+0 JUMP ;
+: 16_1
+
+1 LINE.NUM
+  ^D6_Feed @@ 
+  4.24    F/
+  ^F6_day @! 
+
+2 LINE.NUM
+  5000 I>F 
+  ^D6_Feed @@   F/
+  ^D6_HRT F@! 
+
+3 LINE.NUM
+  10    DELAY
+
+4 LINE.NUM
+  ^F6_day @@ 
+  ^F6_pulses @@   F/
+  ^F6_on @! 
+2 JUMP ;
+: 16_3
+
+1 LINE.NUM
+  ~F6   OFF
+
+2 LINE.NUM
+  ^F6_off   StartTimer
+12 JUMP ;
+: 16_4
+
+1 LINE.NUM
+  ~F6   ON
+
+2 LINE.NUM
+  ^F6_on   StartTimer
+2 JUMP ;
+: 16_14
+1 LINE.NUM 24 I>F ^F6_pulses @@ F/ 3600 I>F F* ^F6_off @! 
+-2 JUMP ;
+: 16_17
+
+1 LINE.NUM
+  10    DELAY
+11 JUMP ;
+: 16_21
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+0 JUMP ;
+: 16_23
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 6 ON"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+0 JUMP ;
+: 16_25
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 16_28
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 16_29
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+-2 JUMP ;
+: 16_42
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+0 JUMP ;
+: 16_43
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 16_46
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 16_48
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 6 OFF"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+-2 JUMP ;
+: 16_50
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 16_2
+TRUE
+
+1 LINE.NUM
+  ^F6_on   T0=
+LAND
+IF -15 ELSE -1 THEN JUMP ;
+: 16_5
+TRUE
+
+1 LINE.NUM
+  ^F6_off   T0=
+LAND
+IF -17 ELSE -13 THEN JUMP ;
+: 16_24
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -9 ELSE -11 THEN JUMP ;
+: 16_31
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -11 ELSE -4 THEN JUMP ;
+: 16_40
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -9 ELSE -4 THEN JUMP ;
+: 16_47
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -11 ELSE -9 THEN JUMP ;
+T: T16
+DUMMY
+16_0
+16_1
+16_3
+16_4
+16_14
+16_17
+16_21
+16_23
+16_25
+16_28
+16_29
+16_42
+16_43
+16_46
+16_48
+16_50
+16_2
+16_5
+16_24
+16_31
+16_40
+16_47
+T;
+&Feed6 ' T16 SETTASK
+: 17_0
+2 JUMP ;
+: 17_9
+
+1 LINE.NUM
+  ~F7   ON
+
+2 LINE.NUM
+  ^F7_on   StartTimer
+4 JUMP ;
+: 17_10
+
+1 LINE.NUM
+  ~F7   OFF
+
+2 LINE.NUM
+  ^F7_off   StartTimer
+12 JUMP ;
+: 17_12
+
+1 LINE.NUM
+  ^D7_Feed @@ 
+  6.69    F/
+  ^F7_day @! 
+
+2 LINE.NUM
+  10000 I>F 
+  ^D7_Feed @@   F/
+  ^D7_HRT F@! 
+
+3 LINE.NUM
+  10    DELAY
+
+4 LINE.NUM
+  ^F7_day @@ 
+  ^F7_pulses @@   F/
+  ^F7_on @! 
+0 JUMP ;
+: 17_14
+1 LINE.NUM 24 I>F ^F7_pulses @@ F/ 3600 I>F F* ^F7_off @! 
+-4 JUMP ;
+: 17_17
+
+1 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 17_21
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+0 JUMP ;
+: 17_23
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 7 ON"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+0 JUMP ;
+: 17_25
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 17_28
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 17_29
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+-2 JUMP ;
+: 17_42
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+0 JUMP ;
+: 17_43
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 17_46
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 17_48
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 7 OFF"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+-2 JUMP ;
+: 17_50
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 17_8
+TRUE
+
+1 LINE.NUM
+  ^F7_off   T0=
+LAND
+IF -14 ELSE -12 THEN JUMP ;
+: 17_11
+TRUE
+
+1 LINE.NUM
+  ^F7_on   T0=
+LAND
+IF -16 ELSE -1 THEN JUMP ;
+: 17_24
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -9 ELSE -11 THEN JUMP ;
+: 17_31
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -11 ELSE -3 THEN JUMP ;
+: 17_40
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -9 ELSE -5 THEN JUMP ;
+: 17_47
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -11 ELSE -9 THEN JUMP ;
+T: T17
+DUMMY
+17_0
+17_9
+17_10
+17_12
+17_14
+17_17
+17_21
+17_23
+17_25
+17_28
+17_29
+17_42
+17_43
+17_46
+17_48
+17_50
+17_8
+17_11
+17_24
+17_31
+17_40
+17_47
+T;
+&Feed7 ' T17 SETTASK
+: 18_0
+0 JUMP ;
+: 18_1
+
+1 LINE.NUM
+  ^D8_Feed @@ 
+  7.18    F/
+  ^F8_day @! 
+
+2 LINE.NUM
+  10000 I>F 
+  ^D8_Feed @@   F/
+  ^D8_HRT F@! 
+
+3 LINE.NUM
+  10    DELAY
+
+4 LINE.NUM
+  ^F8_day @@ 
+  ^F8_pulses @@   F/
+  ^F8_on @! 
+2 JUMP ;
+: 18_3
+
+1 LINE.NUM
+  ~F8   OFF
+
+2 LINE.NUM
+  ^F8_off   StartTimer
+12 JUMP ;
+: 18_4
+
+1 LINE.NUM
+  ~F8   ON
+
+2 LINE.NUM
+  ^F8_on   StartTimer
+2 JUMP ;
+: 18_14
+1 LINE.NUM 24 I>F ^F8_pulses @@ F/ 3600 I>F F* ^F8_off @! 
+-2 JUMP ;
+: 18_17
+
+1 LINE.NUM
+  10    DELAY
+11 JUMP ;
+: 18_21
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+0 JUMP ;
+: 18_23
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 8 ON"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+0 JUMP ;
+: 18_25
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 18_28
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 18_29
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+-2 JUMP ;
+: 18_43
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+0 JUMP ;
+: 18_44
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 18_47
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 18_49
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 8 OFF"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+-2 JUMP ;
+: 18_51
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 18_2
+TRUE
+
+1 LINE.NUM
+  ^F8_on   T0=
+LAND
+IF -15 ELSE -1 THEN JUMP ;
+: 18_5
+TRUE
+
+1 LINE.NUM
+  ^F8_off   T0=
+LAND
+IF -17 ELSE -13 THEN JUMP ;
+: 18_24
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -9 ELSE -11 THEN JUMP ;
+: 18_31
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -11 ELSE -4 THEN JUMP ;
+: 18_41
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -9 ELSE -4 THEN JUMP ;
+: 18_48
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -11 ELSE -9 THEN JUMP ;
+T: T18
+DUMMY
+18_0
+18_1
+18_3
+18_4
+18_14
+18_17
+18_21
+18_23
+18_25
+18_28
+18_29
+18_43
+18_44
+18_47
+18_49
+18_51
+18_2
+18_5
+18_24
+18_31
+18_41
+18_48
+T;
+&Feed8 ' T18 SETTASK
+: 0_0
+1 JUMP ;
+: 0_1
+
+1 LINE.NUM
+  &Biogas1   START.T
+  ^status_Biogas1 I@! 
+
+2 LINE.NUM
+  &Biogas2   START.T
+  ^status_Biogas2 I@! 
+
+3 LINE.NUM
+  &Biogas3   START.T
+  ^status_Biogas3 I@! 
+
+4 LINE.NUM
+  &Biogas4   START.T
+  ^status_Biogas4 I@! 
+
+5 LINE.NUM
+  &Biogas5   START.T
+  ^status_Biogas5 I@! 
+
+6 LINE.NUM
+  &Biogas6   START.T
+  ^status_Biogas6 I@! 
+
+7 LINE.NUM
+  &Biogas7   START.T
+  ^status_Biogas7 I@! 
+
+8 LINE.NUM
+  &Biogas8   START.T
+  ^status_Biogas8 I@! 
+
+9 LINE.NUM
+  &Feed1   START.T
+  ^status_Feed1 @! 
+
+10 LINE.NUM
+  &Feed2   START.T
+  ^status_Feed2 @! 
+
+11 LINE.NUM
+  &Feed3   START.T
+  ^status_Feed3 @! 
+
+12 LINE.NUM
+  &Feed4   START.T
+  ^status_Feed4 @! 
+
+13 LINE.NUM
+  &Feed5   START.T
+  ^status_Feed5 @! 
+
+14 LINE.NUM
+  &Feed6   START.T
+  ^status_Feed6 @! 
+
+15 LINE.NUM
+  &Feed7   START.T
+  ^status_Feed7 @! 
+
+16 LINE.NUM
+  &Feed8   START.T
+  ^status_Feed8 @! 
+
+17 LINE.NUM
+  &Probes   START.T
+  ^status_Probes @! 
+
+18 LINE.NUM
+  &Data_logging   START.T
+  ^status_Data_logging @! 
+
+19 LINE.NUM
+  &Recirculation1   START.T
+  ^status_Recirculation1 @! 
+
+20 LINE.NUM
+  &Recirculation2   START.T
+  ^status_Recirculation2 @! 
+
+21 LINE.NUM
+  &Recirculation3   START.T
+  ^status_Recirculation3 @! 
+
+22 LINE.NUM
+  &Recirculation4   START.T
+  ^status_Recirculation4 @! 
+
+23 LINE.NUM
+  &Recirculation5   START.T
+  ^status_Recirculation5 @! 
+
+24 LINE.NUM
+  &Recirculation6   START.T
+  ^status_Recirculation6 @! 
+
+25 LINE.NUM
+  &Recirculation7   START.T
+  ^status_Recirculation7 @! 
+
+26 LINE.NUM
+  &Recirculation8   START.T
+  ^status_Recirculation8 @! 
+3 JUMP ;
+: 0_3
+
+1 LINE.NUM
+  %Upper   ENABLE
+
+2 LINE.NUM
+ -1 E/DAllPoints
+0 JUMP ;
+: 0_12
+TRUE
+
+1 LINE.NUM
+  %Upper    ENABLE@
+LAND
+
+2 LINE.NUM
+ PTS.ENABLED?
+LAND
+IF 0 ELSE -2 THEN JUMP ;
+: 0_16
+TRUE
+
+1 LINE.NUM
+  %Upper   BoardReady? 0=
+LAND
+IF -4 ELSE -3 THEN JUMP ;
+T: T0
+DUMMY
+0_0
+0_1
+0_3
+0_12
+0_16
+T;
+&Powerup ' T0 SETTASK
+: 26_0
+1 JUMP ;
+: 26_3
+
+1 LINE.NUM
+  ~T1 @@   FABS
+  ^D1_Temp @! 
+
+2 LINE.NUM
+  ~T2 @@   FABS
+  ^D2_Temp @! 
+
+3 LINE.NUM
+  ~T3 @@   FABS
+  ^D3_Temp @! 
+
+4 LINE.NUM
+  ~T4 @@   FABS
+  ^D4_Temp @! 
+
+5 LINE.NUM
+  ~T5 @@   FABS
+  ^D5_Temp @! 
+
+6 LINE.NUM
+  ~T6 @@   FABS
+  ^D6_Temp @! 
+
+7 LINE.NUM
+  ~T7 @@   FABS
+  ^D7_Temp @! 
+
+8 LINE.NUM
+  ~T8 @@   FABS
+  ^D8_Temp @! 
+1 JUMP ;
+: 26_13
+
+1 LINE.NUM
+  ~PH1 @@   FABS
+  ^D1_pH @! 
+
+2 LINE.NUM
+  ~PH2 @@   FABS
+  ^D2_pH @! 
+
+3 LINE.NUM
+  ~PH3 @@   FABS
+  ^D3_pH @! 
+
+4 LINE.NUM
+  ~PH4 @@   FABS
+  ^D4_pH @! 
+
+5 LINE.NUM
+  ~PH5 @@   FABS
+  ^D5_pH @! 
+
+6 LINE.NUM
+  ~PH6 @@   FABS
+  ^D6_pH @! 
+
+7 LINE.NUM
+  ~PH7 @@   FABS
+  ^D7_pH @! 
+
+8 LINE.NUM
+  ~PH8 @@   FABS
+  ^D8_pH @! 
+-2 JUMP ;
+: 26_37
+
+1 LINE.NUM
+  10    DELAY
+-2 JUMP ;
+T: T26
+DUMMY
+26_0
+26_3
+26_13
+26_37
+T;
+&Probes ' T26 SETTASK
+: 27_0
+1 JUMP ;
+: 27_41
+
+1 LINE.NUM
+  ~R1   OFF
+
+2 LINE.NUM
+  ^R1_off   StartTimer
+13 JUMP ;
+: 27_47
+
+1 LINE.NUM
+  3600.0  
+  ^R1_off   SetTimer
+
+2 LINE.NUM
+  30.0  
+  ^R1_on   SetTimer
+0 JUMP ;
+: 27_48
+
+1 LINE.NUM
+  ~R1   ON
+
+2 LINE.NUM
+  ^R1_on   StartTimer
+2 JUMP ;
+: 27_53
+
+1 LINE.NUM
+  10    DELAY
+12 JUMP ;
+: 27_56
+
+1 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 27_74
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+0 JUMP ;
+: 27_76
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Recirc pump 1 ON"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+0 JUMP ;
+: 27_78
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 27_81
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 27_82
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+-2 JUMP ;
+: 27_95
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+0 JUMP ;
+: 27_96
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 27_99
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 27_101
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Recirc pump 1 OFF"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+-2 JUMP ;
+: 27_103
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 27_40
+TRUE
+
+1 LINE.NUM
+  ^R1_off   T0=
+LAND
+IF -15 ELSE -12 THEN JUMP ;
+: 27_45
+FALSE
+
+1 LINE.NUM
+  ^R1_on   T0=
+LOR
+IF -17 ELSE -14 THEN JUMP ;
+: 27_77
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -9 ELSE -11 THEN JUMP ;
+: 27_84
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -11 ELSE -3 THEN JUMP ;
+: 27_93
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -9 ELSE -5 THEN JUMP ;
+: 27_100
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -11 ELSE -9 THEN JUMP ;
+T: T27
+DUMMY
+27_0
+27_41
+27_47
+27_48
+27_53
+27_56
+27_74
+27_76
+27_78
+27_81
+27_82
+27_95
+27_96
+27_99
+27_101
+27_103
+27_40
+27_45
+27_77
+27_84
+27_93
+27_100
+T;
+&Recirculation1 ' T27 SETTASK
+: 28_0
+1 JUMP ;
+: 28_2
+
+1 LINE.NUM
+  ~R2   ON
+
+2 LINE.NUM
+  ^R2_on   StartTimer
+8 JUMP ;
+: 28_3
+
+1 LINE.NUM
+  3600.0  
+  ^R2_off   SetTimer
+
+2 LINE.NUM
+  30.0  
+  ^R2_on   SetTimer
+-2 JUMP ;
+: 28_7
+
+1 LINE.NUM
+  ~R2   OFF
+
+2 LINE.NUM
+  ^R2_off   StartTimer
+7 JUMP ;
+: 28_15
+
+1 LINE.NUM
+  10    DELAY
+12 JUMP ;
+: 28_16
+
+1 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 28_26
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+0 JUMP ;
+: 28_27
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 28_30
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 28_32
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Recirc pump 2 ON"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+-2 JUMP ;
+: 28_34
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 28_39
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+0 JUMP ;
+: 28_41
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Recirc pump 2 OFF"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+0 JUMP ;
+: 28_43
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+6 JUMP ;
+: 28_46
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+6 JUMP ;
+: 28_47
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+-2 JUMP ;
+: 28_5
+FALSE
+
+1 LINE.NUM
+  ^R2_on   T0=
+LOR
+IF -14 ELSE -12 THEN JUMP ;
+: 28_8
+TRUE
+
+1 LINE.NUM
+  ^R2_off   T0=
+LAND
+IF -16 ELSE -14 THEN JUMP ;
+: 28_24
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -12 ELSE -3 THEN JUMP ;
+: 28_31
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -14 ELSE -12 THEN JUMP ;
+: 28_42
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -6 ELSE -8 THEN JUMP ;
+: 28_49
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -8 ELSE -5 THEN JUMP ;
+T: T28
+DUMMY
+28_0
+28_2
+28_3
+28_7
+28_15
+28_16
+28_26
+28_27
+28_30
+28_32
+28_34
+28_39
+28_41
+28_43
+28_46
+28_47
+28_5
+28_8
+28_24
+28_31
+28_42
+28_49
+T;
+&Recirculation2 ' T28 SETTASK
+: 29_0
+1 JUMP ;
+: 29_7
+
+1 LINE.NUM
+  ~R3   OFF
+
+2 LINE.NUM
+  ^R3_off   StartTimer
+9 JUMP ;
+: 29_11
+
+1 LINE.NUM
+  3600.0  
+  ^R3_off   SetTimer
+
+2 LINE.NUM
+  30.0  
+  ^R3_on   SetTimer
+0 JUMP ;
+: 29_12
+
+1 LINE.NUM
+  ~R3   ON
+
+2 LINE.NUM
+  ^R3_on   StartTimer
+6 JUMP ;
+: 29_15
+
+1 LINE.NUM
+  10    DELAY
+12 JUMP ;
+: 29_16
+
+1 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 29_26
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+0 JUMP ;
+: 29_27
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 29_30
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 29_32
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Recirc pump 3 ON"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+-2 JUMP ;
+: 29_34
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 29_39
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+0 JUMP ;
+: 29_41
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ," 
+ *_HSV_TEMP $CAT " Recirc pump 3 OFF"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+0 JUMP ;
+: 29_43
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+6 JUMP ;
+: 29_46
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+6 JUMP ;
+: 29_47
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+-2 JUMP ;
+: 29_6
+TRUE
+
+1 LINE.NUM
+  ^R3_off   T0=
+LAND
+IF -15 ELSE -12 THEN JUMP ;
+: 29_9
+FALSE
+
+1 LINE.NUM
+  ^R3_on   T0=
+LOR
+IF -17 ELSE -14 THEN JUMP ;
+: 29_24
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -12 ELSE -2 THEN JUMP ;
+: 29_31
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -14 ELSE -12 THEN JUMP ;
+: 29_42
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -6 ELSE -8 THEN JUMP ;
+: 29_49
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -8 ELSE -6 THEN JUMP ;
+T: T29
+DUMMY
+29_0
+29_7
+29_11
+29_12
+29_15
+29_16
+29_26
+29_27
+29_30
+29_32
+29_34
+29_39
+29_41
+29_43
+29_46
+29_47
+29_6
+29_9
+29_24
+29_31
+29_42
+29_49
+T;
+&Recirculation3 ' T29 SETTASK
+: 30_0
+1 JUMP ;
+: 30_2
+
+1 LINE.NUM
+  ~R4   ON
+
+2 LINE.NUM
+  ^R4_on   StartTimer
+8 JUMP ;
+: 30_3
+
+1 LINE.NUM
+  3600.0  
+  ^R4_off   SetTimer
+
+2 LINE.NUM
+  30.0  
+  ^R4_on   SetTimer
+-2 JUMP ;
+: 30_7
+
+1 LINE.NUM
+  ~R4   OFF
+
+2 LINE.NUM
+  ^R4_off   StartTimer
+7 JUMP ;
+: 30_15
+
+1 LINE.NUM
+  10    DELAY
+12 JUMP ;
+: 30_16
+
+1 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 30_26
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+0 JUMP ;
+: 30_27
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 30_30
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 30_32
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Recirc pump 4 ON"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+-2 JUMP ;
+: 30_34
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 30_39
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+0 JUMP ;
+: 30_41
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Recirc pump 4 OFF"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+0 JUMP ;
+: 30_43
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+6 JUMP ;
+: 30_46
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+6 JUMP ;
+: 30_47
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+-2 JUMP ;
+: 30_5
+FALSE
+
+1 LINE.NUM
+  ^R4_on   T0=
+LOR
+IF -14 ELSE -12 THEN JUMP ;
+: 30_8
+TRUE
+
+1 LINE.NUM
+  ^R4_off   T0=
+LAND
+IF -16 ELSE -14 THEN JUMP ;
+: 30_24
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -12 ELSE -3 THEN JUMP ;
+: 30_31
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -14 ELSE -12 THEN JUMP ;
+: 30_42
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -6 ELSE -8 THEN JUMP ;
+: 30_49
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -8 ELSE -5 THEN JUMP ;
+T: T30
+DUMMY
+30_0
+30_2
+30_3
+30_7
+30_15
+30_16
+30_26
+30_27
+30_30
+30_32
+30_34
+30_39
+30_41
+30_43
+30_46
+30_47
+30_5
+30_8
+30_24
+30_31
+30_42
+30_49
+T;
+&Recirculation4 ' T30 SETTASK
+: 32_0
+1 JUMP ;
+: 32_7
+
+1 LINE.NUM
+  ~R5   OFF
+
+2 LINE.NUM
+  ^R5_off   StartTimer
+4 JUMP ;
+: 32_11
+
+1 LINE.NUM
+  3600.0  
+  ^R5_off   SetTimer
+
+2 LINE.NUM
+  30.0  
+  ^R5_on   SetTimer
+0 JUMP ;
+: 32_12
+
+1 LINE.NUM
+  ~R5   ON
+
+2 LINE.NUM
+  ^R5_on   StartTimer
+11 JUMP ;
+: 32_15
+
+1 LINE.NUM
+  10    DELAY
+11 JUMP ;
+: 32_16
+
+1 LINE.NUM
+  10    DELAY
+11 JUMP ;
+: 32_22
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+0 JUMP ;
+: 32_24
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Recirc pump 5 OFF"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13 
+ *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+0 JUMP ;
+: 32_26
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 32_29
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 32_30
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+-2 JUMP ;
+: 32_41
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+0 JUMP ;
+: 32_42
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 32_45
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 32_47
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Recirc pump 5 ON"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+-2 JUMP ;
+: 32_49
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 32_6
+TRUE
+
+1 LINE.NUM
+  ^R5_off   T0=
+LAND
+IF -15 ELSE -13 THEN JUMP ;
+: 32_9
+FALSE
+
+1 LINE.NUM
+  ^R5_on   T0=
+LOR
+IF -17 ELSE -13 THEN JUMP ;
+: 32_25
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -9 ELSE -11 THEN JUMP ;
+: 32_32
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -11 ELSE -4 THEN JUMP ;
+: 32_39
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -9 ELSE -4 THEN JUMP ;
+: 32_46
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -11 ELSE -9 THEN JUMP ;
+T: T32
+DUMMY
+32_0
+32_7
+32_11
+32_12
+32_15
+32_16
+32_22
+32_24
+32_26
+32_29
+32_30
+32_41
+32_42
+32_45
+32_47
+32_49
+32_6
+32_9
+32_25
+32_32
+32_39
+32_46
+T;
+&Recirculation5 ' T32 SETTASK
+: 33_0
+1 JUMP ;
+: 33_2
+
+1 LINE.NUM
+  ~R6   ON
+
+2 LINE.NUM
+  ^R6_on   StartTimer
+13 JUMP ;
+: 33_3
+
+1 LINE.NUM
+  3600.0  
+  ^R6_off   SetTimer
+
+2 LINE.NUM
+  30.0  
+  ^R6_on   SetTimer
+-2 JUMP ;
+: 33_7
+
+1 LINE.NUM
+  ~R6   OFF
+
+2 LINE.NUM
+  ^R6_off   StartTimer
+2 JUMP ;
+: 33_15
+
+1 LINE.NUM
+  10    DELAY
+12 JUMP ;
+: 33_16
+
+1 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 33_22
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+0 JUMP ;
+: 33_24
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Recirc pump 6 OFF"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+0 JUMP ;
+: 33_26
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 33_29
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 33_30
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+-2 JUMP ;
+: 33_41
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+0 JUMP ;
+: 33_42
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 33_45
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 33_47
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Recirc pump 6 ON"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+-2 JUMP ;
+: 33_49
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 33_5
+FALSE
+
+1 LINE.NUM
+  ^R6_on   T0=
+LOR
+IF -14 ELSE -12 THEN JUMP ;
+: 33_8
+TRUE
+
+1 LINE.NUM
+  ^R6_off   T0=
+LAND
+IF -16 ELSE -14 THEN JUMP ;
+: 33_25
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -9 ELSE -11 THEN JUMP ;
+: 33_32
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -11 ELSE -3 THEN JUMP ;
+: 33_39
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -9 ELSE -5 THEN JUMP ;
+: 33_46
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -11 ELSE -9 THEN JUMP ;
+T: T33
+DUMMY
+33_0
+33_2
+33_3
+33_7
+33_15
+33_16
+33_22
+33_24
+33_26
+33_29
+33_30
+33_41
+33_42
+33_45
+33_47
+33_49
+33_5
+33_8
+33_25
+33_32
+33_39
+33_46
+T;
+&Recirculation6 ' T33 SETTASK
+: 34_0
+1 JUMP ;
+: 34_7
+
+1 LINE.NUM
+  ~R7   OFF
+
+2 LINE.NUM
+  ^R7_off   StartTimer
+4 JUMP ;
+: 34_11
+
+1 LINE.NUM
+  3600.0  
+  ^R7_off   SetTimer
+
+2 LINE.NUM
+  60.0  
+  ^R7_on   SetTimer
+0 JUMP ;
+: 34_12
+
+1 LINE.NUM
+  ~R7   ON
+
+2 LINE.NUM
+  ^R7_on   StartTimer
+11 JUMP ;
+: 34_15
+
+1 LINE.NUM
+  10    DELAY
+12 JUMP ;
+: 34_16
+
+1 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 34_22
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+0 JUMP ;
+: 34_24
+1 LINE.NUM 
+*_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Recirc pump 7 OFF"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+0 JUMP ;
+: 34_26
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 34_29
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 34_30
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+-2 JUMP ;
+: 34_41
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+0 JUMP ;
+: 34_42
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 34_45
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 34_47
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Recirc pump 7 ON"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+-2 JUMP ;
+: 34_49
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 34_6
+TRUE
+
+1 LINE.NUM
+  ^R7_off   T0=
+LAND
+IF -15 ELSE -12 THEN JUMP ;
+: 34_9
+FALSE
+
+1 LINE.NUM
+  ^R7_on   T0=
+LOR
+IF -17 ELSE -14 THEN JUMP ;
+: 34_25
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -9 ELSE -11 THEN JUMP ;
+: 34_32
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -11 ELSE -4 THEN JUMP ;
+: 34_39
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -9 ELSE -4 THEN JUMP ;
+: 34_46
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -11 ELSE -9 THEN JUMP ;
+T: T34
+DUMMY
+34_0
+34_7
+34_11
+34_12
+34_15
+34_16
+34_22
+34_24
+34_26
+34_29
+34_30
+34_41
+34_42
+34_45
+34_47
+34_49
+34_6
+34_9
+34_25
+34_32
+34_39
+34_46
+T;
+&Recirculation7 ' T34 SETTASK
+: 35_0
+1 JUMP ;
+: 35_2
+
+1 LINE.NUM
+  ~R8   ON
+
+2 LINE.NUM
+  ^R8_on   StartTimer
+13 JUMP ;
+: 35_3
+
+1 LINE.NUM
+  3600.0  
+  ^R8_off   SetTimer
+
+2 LINE.NUM
+  60.0  
+  ^R8_on   SetTimer
+-2 JUMP ;
+: 35_7
+
+1 LINE.NUM
+  ~R8   OFF
+
+2 LINE.NUM
+  ^R8_off   StartTimer
+2 JUMP ;
+: 35_15
+
+1 LINE.NUM
+  10    DELAY
+12 JUMP ;
+: 35_16
+
+1 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 35_22
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+0 JUMP ;
+: 35_24
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Recirc pump 8 OFF"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+0 JUMP ;
+: 35_26
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 35_29
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 35_30
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+-2 JUMP ;
+: 35_41
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+0 JUMP ;
+: 35_42
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 35_45
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 35_47
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT 
+" Recirc pump 8 ON"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+-2 JUMP ;
+: 35_49
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 35_5
+FALSE
+
+1 LINE.NUM
+  ^R8_on   T0=
+LOR
+IF -14 ELSE -12 THEN JUMP ;
+: 35_8
+TRUE
+
+1 LINE.NUM
+  ^R8_off   T0=
+LAND
+IF -16 ELSE -14 THEN JUMP ;
+: 35_25
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -9 ELSE -11 THEN JUMP ;
+: 35_32
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -11 ELSE -3 THEN JUMP ;
+: 35_39
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -9 ELSE -5 THEN JUMP ;
+: 35_46
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -11 ELSE -9 THEN JUMP ;
+T: T35
+DUMMY
+35_0
+35_2
+35_3
+35_7
+35_15
+35_16
+35_22
+35_24
+35_26
+35_29
+35_30
+35_41
+35_42
+35_45
+35_47
+35_49
+35_5
+35_8
+35_25
+35_32
+35_39
+35_46
+T;
+&Recirculation8 ' T35 SETTASK
+CREATE T.ARRAY
+&Biogas1 ,
+&Biogas2 ,
+&Biogas3 ,
+&Biogas4 ,
+&Biogas5 ,
+&Biogas6 ,
+&Biogas7 ,
+&Biogas8 ,
+&Data_logging ,
+&Feed1 ,
+&Feed2 ,
+&Feed3 ,
+&Feed4 ,
+&Feed5 ,
+&Feed6 ,
+&Feed7 ,
+&Feed8 ,
+&Powerup ,
+&Probes ,
+&Recirculation1 ,
+&Recirculation2 ,
+&Recirculation3 ,
+&Recirculation4 ,
+&Recirculation5 ,
+&Recirculation6 ,
+&Recirculation7 ,
+&Recirculation8 ,
+ 0 ,
+CREATE V.ARRAY
+^D1_Feed ,
+^D1_FM ,
+^D1_HRT ,
+^D1_pH ,
+^D1_Temp ,
+^D2_Feed ,
+^D2_FM ,
+^D2_HRT ,
+^D2_pH ,
+^D2_Temp ,
+^D3_Feed ,
+^D3_FM ,
+^D3_HRT ,
+^D3_pH ,
+^D3_Temp ,
+^D4_Feed ,
+^D4_FM ,
+^D4_HRT ,
+^D4_pH ,
+^D4_Temp ,
+^D5_Feed ,
+^D5_FM ,
+^D5_HRT ,
+^D5_pH ,
+^D5_Temp ,
+^D6_Feed ,
+^D6_FM ,
+^D6_HRT ,
+^D6_pH ,
+^D6_Temp ,
+^D7_Feed ,
+^D7_FM ,
+^D7_HRT ,
+^D7_pH ,
+^D7_Temp ,
+^D8_Feed ,
+^D8_FM ,
+^D8_HRT ,
+^D8_pH ,
+^D8_Temp ,
+^D9_pH ,
+^D9_Temp ,
+^F1_day ,
+^F1_pulses ,
+^F2_day ,
+^F2_pulses ,
+^F3_day ,
+^F3_pulses ,
+^F4_day ,
+^F4_pulses ,
+^F5_day ,
+^F5_pulses ,
+^F6_day ,
+^F6_pulses ,
+^F7_day ,
+^F7_pulses ,
+^F8_day ,
+^F8_pulses ,
+^FM1_biogas ,
+^FM1_biogas_day ,
+^FM1_counts ,
+^FM2_biogas ,
+^FM2_biogas_day ,
+^FM2_counts ,
+^FM3_biogas ,
+^FM3_biogas_day ,
+^FM3_counts ,
+^FM4_biogas ,
+^FM4_biogas_day ,
+^FM4_counts ,
+^FM5_biogas ,
+^FM5_biogas_day ,
+^FM5_counts ,
+^FM6_biogas ,
+^FM6_biogas_day ,
+^FM6_counts ,
+^FM7_biogas ,
+^FM7_biogas_day ,
+^FM7_counts ,
+^FM8_biogas ,
+^FM8_biogas_day ,
+^FM8_counts ,
+^FM9_counts ,
+^Quarter ,
+^sD1txt ,
+^sD2txt ,
+^sD3txt ,
+^sD4txt ,
+^sD5txt ,
+^sD6txt ,
+^sD7txt ,
+^sD8txt ,
+^Since_midnight ,
+^status_Biogas1 ,
+^status_Biogas2 ,
+^status_Biogas3 ,
+^status_Biogas4 ,
+^status_Biogas5 ,
+^status_Biogas6 ,
+^status_Biogas7 ,
+^status_Biogas8 ,
+^status_Data_logging ,
+^status_Feed1 ,
+^status_Feed2 ,
+^status_Feed3 ,
+^status_Feed4 ,
+^status_Feed5 ,
+^status_Feed6 ,
+^status_Feed7 ,
+^status_Feed8 ,
+^status_log ,
+^status_Probes ,
+^status_Recirculation ,
+^status_Recirculation1 ,
+^status_Recirculation2 ,
+^status_Recirculation3 ,
+^status_Recirculation4 ,
+^status_Recirculation5 ,
+^status_Recirculation6 ,
+^status_Recirculation7 ,
+^status_Recirculation8 ,
+*D1row ,
+*D2row ,
+*D3row ,
+*D4row ,
+*D5row ,
+*D6row ,
+*D7row ,
+*D8row ,
+*Date ,
+*sD1_pH ,
+*sD1_Temp ,
+*sD2_pH ,
+*sD2_Temp ,
+*sD3_pH ,
+*sD3_Temp ,
+*sD4_pH ,
+*sD4_Temp ,
+*sD5_pH ,
+*sD5_Temp ,
+*sD6_pH ,
+*sD6_Temp ,
+*sD7_pH ,
+*sD7_Temp ,
+*sD8_pH ,
+*sD8_Temp ,
+*sD9_pH ,
+*sD9_Temp ,
+*sFM1_counts ,
+*sFM2_counts ,
+*sFM3_counts ,
+*sFM4_counts ,
+*sFM5_counts ,
+*sFM6_counts ,
+*sFM7_counts ,
+*sFM8_counts ,
+*sFM9_counts ,
+*string_log ,
+*Time ,
+*_HSV_SEMA ,
+*_HSV_TEMP ,
+*D1txt ,
+*D2txt ,
+*D3txt ,
+*D4txt ,
+*D5txt ,
+*D6txt ,
+*D7txt ,
+*D8txt ,
+*log ,
+ 0 ,
+CREATE TI.ARRAY
+^F1_off ,
+^F1_on ,
+^F2_off ,
+^F2_on ,
+^F3_off ,
+^F3_on ,
+^F4_off ,
+^F4_on ,
+^F5_off ,
+^F5_on ,
+^F6_off ,
+^F6_on ,
+^F7_off ,
+^F7_on ,
+^F8_off ,
+^F8_on ,
+^R1_off ,
+^R1_on ,
+^R2_off ,
+^R2_on ,
+^R3_off ,
+^R3_on ,
+^R4_off ,
+^R4_on ,
+^R5_off ,
+^R5_on ,
+^R6_off ,
+^R6_on ,
+^R7_off ,
+^R7_on ,
+^R8_off ,
+^R8_on ,
+ 0 ,
+CREATE PTR.ARRAY
+ 0 ,
+CREATE TA.ARRAY 
+ 0 ,
+CREATE PTRTABLE.ARRAY 
+ 0 ,
+CREATE B.ARRAY
+%Upper ,
+ 0 ,
+CREATE P.ARRAY
+~F1 ,
+~F2 ,
+~F3 ,
+~F4 ,
+~F5 ,
+~F6 ,
+~F7 ,
+~F8 ,
+~R1 ,
+~R2 ,
+~R3 ,
+~R4 ,
+~R5 ,
+~R6 ,
+~R7 ,
+~R8 ,
+~FM1 ,
+~FM2 ,
+~FM3 ,
+~FM4 ,
+~FM5 ,
+~FM6 ,
+~FM7 ,
+~FM8 ,
+~PH1 ,
+~PH2 ,
+~PH3 ,
+~PH4 ,
+~PH5 ,
+~PH6 ,
+~PH7 ,
+~PH8 ,
+~T1 ,
+~T2 ,
+~T3 ,
+~T4 ,
+~T5 ,
+~T6 ,
+~T7 ,
+~T8 ,
+ 0 ,
+CREATE PID.ARRAY
+ 0 ,
+CREATE E/R.ARRAY
+ 0 ,
+CREATE E/RGROUP.ARRAY
+ 0 ,
+: CONFIG_PORTS
+;
+: W_INIT_IO
+CONFIG_PORTS
+" %Upper  (1/1)" *_HSV_INIT_IO $MOVE 0 ^_HNV_INIT_IO @!
+%Upper DISABLE
+ " Initializing variables" *_HSV_INIT_IO $MOVE
+0.00000000 ^D1_FM @!
+0 ^D1_HRT @!
+0.00000000 ^D1_pH @!
+0.00000000 ^D1_Temp @!
+0.00000000 ^D2_FM @!
+0 ^D2_HRT @!
+0.00000000 ^D2_pH @!
+0.00000000 ^D2_Temp @!
+0.00000000 ^D3_FM @!
+0 ^D3_HRT @!
+0.00000000 ^D3_pH @!
+0.00000000 ^D3_Temp @!
+0.00000000 ^D4_FM @!
+0 ^D4_HRT @!
+0.00000000 ^D4_pH @!
+0.00000000 ^D4_Temp @!
+0.00000000 ^D5_FM @!
+0 ^D5_HRT @!
+0.00000000 ^D5_pH @!
+0.00000000 ^D5_Temp @!
+0.00000000 ^D6_FM @!
+0 ^D6_HRT @!
+0.00000000 ^D6_pH @!
+0.00000000 ^D6_Temp @!
+0.00000000 ^D7_FM @!
+0 ^D7_HRT @!
+0.00000000 ^D7_pH @!
+0.00000000 ^D7_Temp @!
+0.00000000 ^D8_FM @!
+0 ^D8_HRT @!
+0.00000000 ^D8_pH @!
+0.00000000 ^D8_Temp @!
+0.00000000 ^D9_pH @!
+0.00000000 ^D9_Temp @!
+0.00000000 ^F1_day @!
+0.0 ^F1_off @!
+0.0 ^F1_on @!
+0.00000000 ^F2_day @!
+0.0 ^F2_off @!
+0.0 ^F2_on @!
+0.00000000 ^F3_day @!
+0.0 ^F3_off @!
+0.0 ^F3_on @!
+8.0000000 ^F3_pulses @!
+0.00000000 ^F4_day @!
+0.0 ^F4_off @!
+0.0 ^F4_on @!
+0.00000000 ^F5_day @!
+0.0 ^F5_off @!
+0.0 ^F5_on @!
+8.0000000 ^F5_pulses @!
+0.00000000 ^F6_day @!
+0.0 ^F6_off @!
+0.0 ^F6_on @!
+8.0000000 ^F6_pulses @!
+0.00000000 ^F7_day @!
+0.0 ^F7_off @!
+0.0 ^F7_on @!
+24.000000 ^F7_pulses @!
+0.00000000 ^F8_day @!
+0.0 ^F8_off @!
+0.0 ^F8_on @!
+24.000000 ^F8_pulses @!
+0 ^FM1_biogas @!
+0 ^FM1_biogas_day @!
+0 ^FM1_counts @!
+0 ^FM2_biogas @!
+0 ^FM2_biogas_day @!
+0 ^FM2_counts @!
+0 ^FM3_biogas @!
+0 ^FM3_biogas_day @!
+0 ^FM3_counts @!
+0 ^FM4_biogas @!
+0 ^FM4_biogas_day @!
+0 ^FM4_counts @!
+0 ^FM5_biogas @!
+0 ^FM5_biogas_day @!
+0 ^FM5_counts @!
+0 ^FM6_biogas @!
+0 ^FM6_biogas_day @!
+0 ^FM6_counts @!
+0 ^FM7_biogas @!
+0 ^FM7_biogas_day @!
+0 ^FM7_counts @!
+0 ^FM8_biogas @!
+0 ^FM8_biogas_day @!
+0 ^FM8_counts @!
+0 ^FM9_counts @!
+0 ^Quarter @!
+0.0 ^R1_off @!
+0.0 ^R1_on @!
+0.0 ^R2_off @!
+0.0 ^R2_on @!
+0.0 ^R3_off @!
+0.0 ^R3_on @!
+0.0 ^R4_off @!
+0.0 ^R4_on @!
+0.0 ^R5_off @!
+0.0 ^R5_on @!
+0.0 ^R6_off @!
+0.0 ^R6_on @!
+0.0 ^R7_off @!
+0.0 ^R7_on @!
+0.0 ^R8_off @!
+0.0 ^R8_on @!
+0 ^sD1txt @!
+0 ^sD2txt @!
+0 ^sD3txt @!
+0 ^sD4txt @!
+0 ^sD5txt @!
+0 ^sD6txt @!
+0 ^sD7txt @!
+0 ^sD8txt @!
+0 ^Since_midnight @!
+0.00000000 ^status_Biogas1 @!
+0.00000000 ^status_Biogas2 @!
+0.00000000 ^status_Biogas3 @!
+0.00000000 ^status_Biogas4 @!
+0.00000000 ^status_Biogas5 @!
+0.00000000 ^status_Biogas6 @!
+0.00000000 ^status_Biogas7 @!
+0.00000000 ^status_Biogas8 @!
+0 ^status_Data_logging @!
+0 ^status_Feed1 @!
+0 ^status_Feed2 @!
+0 ^status_Feed3 @!
+0 ^status_Feed4 @!
+0 ^status_Feed5 @!
+0 ^status_Feed6 @!
+0 ^status_Feed7 @!
+0 ^status_Feed8 @!
+0 ^status_log @!
+0 ^status_Probes @!
+0 ^status_Recirculation @!
+0 ^status_Recirculation1 @!
+0 ^status_Recirculation2 @!
+0 ^status_Recirculation3 @!
+0 ^status_Recirculation4 @!
+0 ^status_Recirculation5 @!
+0 ^status_Recirculation6 @!
+0 ^status_Recirculation7 @!
+0 ^status_Recirculation8 @!
+" "
+ *D1row $MOVE
+" "
+ *D2row $MOVE
+" "
+ *D3row $MOVE
+" "
+ *D4row $MOVE
+" "
+ *D5row $MOVE
+" "
+ *D6row $MOVE
+" "
+ *D7row $MOVE
+" "
+ *D8row $MOVE
+" "
+ *Date $MOVE
+" "
+ *sD1_pH $MOVE
+" "
+ *sD1_Temp $MOVE
+" "
+ *sD2_pH $MOVE
+" "
+ *sD2_Temp $MOVE
+" "
+ *sD3_pH $MOVE
+" "
+ *sD3_Temp $MOVE
+" "
+ *sD4_pH $MOVE
+" "
+ *sD4_Temp $MOVE
+" "
+ *sD5_pH $MOVE
+" "
+ *sD5_Temp $MOVE
+" "
+ *sD6_pH $MOVE
+" "
+ *sD6_Temp $MOVE
+" "
+ *sD7_pH $MOVE
+" "
+ *sD7_Temp $MOVE
+" "
+ *sD8_pH $MOVE
+" "
+ *sD8_Temp $MOVE
+" "
+ *sD9_pH $MOVE
+" "
+ *sD9_Temp $MOVE
+" "
+ *sFM1_counts $MOVE
+" "
+ *sFM2_counts $MOVE
+" "
+ *sFM3_counts $MOVE
+" "
+ *sFM4_counts $MOVE
+" "
+ *sFM5_counts $MOVE
+" "
+ *sFM6_counts $MOVE
+" "
+ *sFM7_counts $MOVE
+" "
+ *sFM8_counts $MOVE
+" "
+ *sFM9_counts $MOVE
+" "
+ *string_log $MOVE
+" "
+ *Time $MOVE
+" file:a,C:\Users\Digester\Documents\Digester4.txt"
+ *D4txt $MOVE
+" file:a,C:\Users\Digester\Documents\Digester5.txt"
+ *D5txt $MOVE
+" file:a,C:\Users\Digester\Documents\Digester6.txt"
+ *D6txt $MOVE
+" file:a,C:\Users\Digester\Documents\Digester7.txt"
+ *D7txt $MOVE
+" file:a,C:\Users\Digester\Documents\Digester8.txt"
+ *D8txt $MOVE
+" file:a,C:\Users\Digester\Documents\Emmanuel\Opto22\FermentationLab\RuntimeLogging.log"
+ *log $MOVE
+ " " *_HSV_INIT_IO $MOVE
+;
+T: T_INIT_IO
+W_INIT_IO
+&Powerup START.T DROP
+T;
+&_INIT_IO ' T_INIT_IO  SETTASK
+   : _RUN
+   CLEARERRORS
+   &_INIT_IO START.T DROP
+   ;
+: DATESTAMP ." 08/24/18 " ;
+: TIMESTAMP ." 12:58:41 " ;
+: CRCSTAMP  ." EF04F7980184575BDC0CD14BFE2D1A40 " ;
+MAKECHECK
+CLEAR.BREAKS
+
+\ ********************** INC File **********************
+
+100.00000 ^D1_Feed @!
+100.00000 ^D2_Feed @!
+100.00000 ^D3_Feed @!
+100.00000 ^D4_Feed @!
+100.00000 ^D5_Feed @!
+100.00000 ^D6_Feed @!
+500.00000 ^D7_Feed @!
+500.00000 ^D8_Feed @!
+8.0000000 ^F1_pulses @!
+8.0000000 ^F2_pulses @!
+8.0000000 ^F4_pulses @!
+\ ""DOWNLOAD_COMPRESSION_OFF
+*D1txt $INN
+file:a,C:\Users\Digester\Documents\Digester1.txt
+*D2txt $INN
+file:a,C:\Users\Digester\Documents\Digester2.txt
+*D3txt $INN
+file:a,C:\Users\Digester\Documents\Digester3.txt

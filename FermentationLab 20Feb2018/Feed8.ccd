@@ -1,0 +1,186 @@
+: 18_0
+0 JUMP ;
+: 18_1
+
+1 LINE.NUM
+  ^D8_Feed @@ 
+  7.18    F/
+  ^F8_day @! 
+
+2 LINE.NUM
+  10000 I>F 
+  ^D8_Feed @@   F/
+  ^D8_HRT F@! 
+
+3 LINE.NUM
+  10    DELAY
+
+4 LINE.NUM
+  ^F8_day @@ 
+  ^F8_pulses @@   F/
+  ^F8_on @! 
+2 JUMP ;
+: 18_3
+
+1 LINE.NUM
+  ~F8   OFF
+
+2 LINE.NUM
+  ^F8_off   StartTimer
+12 JUMP ;
+: 18_4
+
+1 LINE.NUM
+  ~F8   ON
+
+2 LINE.NUM
+  ^F8_on   StartTimer
+2 JUMP ;
+: 18_14
+1 LINE.NUM 24 I>F ^F8_pulses @@ F/ 3600 I>F F* ^F8_off @! 
+-2 JUMP ;
+: 18_17
+
+1 LINE.NUM
+  10    DELAY
+11 JUMP ;
+: 18_21
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+0 JUMP ;
+: 18_23
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 8 ON"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+0 JUMP ;
+: 18_25
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 18_28
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 18_29
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+-2 JUMP ;
+: 18_43
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+0 JUMP ;
+: 18_44
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 18_47
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 18_49
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 8 OFF"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+-2 JUMP ;
+: 18_51
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 18_2
+TRUE
+
+1 LINE.NUM
+  ^F8_on   T0=
+LAND
+IF -15 ELSE -1 THEN JUMP ;
+: 18_5
+TRUE
+
+1 LINE.NUM
+  ^F8_off   T0=
+LAND
+IF -17 ELSE -13 THEN JUMP ;
+: 18_24
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -9 ELSE -11 THEN JUMP ;
+: 18_31
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -11 ELSE -4 THEN JUMP ;
+: 18_41
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -9 ELSE -4 THEN JUMP ;
+: 18_48
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -11 ELSE -9 THEN JUMP ;
+T: T18
+DUMMY
+18_0
+18_1
+18_3
+18_4
+18_14
+18_17
+18_21
+18_23
+18_25
+18_28
+18_29
+18_43
+18_44
+18_47
+18_49
+18_51
+18_2
+18_5
+18_24
+18_31
+18_41
+18_48
+T;
+&Feed8 ' T18 SETTASK

@@ -1,0 +1,186 @@
+: 17_0
+2 JUMP ;
+: 17_9
+
+1 LINE.NUM
+  ~F7   ON
+
+2 LINE.NUM
+  ^F7_on   StartTimer
+4 JUMP ;
+: 17_10
+
+1 LINE.NUM
+  ~F7   OFF
+
+2 LINE.NUM
+  ^F7_off   StartTimer
+12 JUMP ;
+: 17_12
+
+1 LINE.NUM
+  ^D7_Feed @@ 
+  6.69    F/
+  ^F7_day @! 
+
+2 LINE.NUM
+  10000 I>F 
+  ^D7_Feed @@   F/
+  ^D7_HRT F@! 
+
+3 LINE.NUM
+  10    DELAY
+
+4 LINE.NUM
+  ^F7_day @@ 
+  ^F7_pulses @@   F/
+  ^F7_on @! 
+0 JUMP ;
+: 17_14
+1 LINE.NUM 24 I>F ^F7_pulses @@ F/ 3600 I>F F* ^F7_off @! 
+-4 JUMP ;
+: 17_17
+
+1 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 17_21
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+0 JUMP ;
+: 17_23
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 7 ON"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+0 JUMP ;
+: 17_25
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 17_28
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 17_29
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+-2 JUMP ;
+: 17_42
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+0 JUMP ;
+: 17_43
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 17_46
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 17_48
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 7 OFF"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+-2 JUMP ;
+: 17_50
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 17_8
+TRUE
+
+1 LINE.NUM
+  ^F7_off   T0=
+LAND
+IF -14 ELSE -12 THEN JUMP ;
+: 17_11
+TRUE
+
+1 LINE.NUM
+  ^F7_on   T0=
+LAND
+IF -16 ELSE -1 THEN JUMP ;
+: 17_24
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -9 ELSE -11 THEN JUMP ;
+: 17_31
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -11 ELSE -3 THEN JUMP ;
+: 17_40
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -9 ELSE -5 THEN JUMP ;
+: 17_47
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -11 ELSE -9 THEN JUMP ;
+T: T17
+DUMMY
+17_0
+17_9
+17_10
+17_12
+17_14
+17_17
+17_21
+17_23
+17_25
+17_28
+17_29
+17_42
+17_43
+17_46
+17_48
+17_50
+17_8
+17_11
+17_24
+17_31
+17_40
+17_47
+T;
+&Feed7 ' T17 SETTASK

@@ -1,0 +1,186 @@
+: 13_0
+2 JUMP ;
+: 13_9
+
+1 LINE.NUM
+  ~F3   ON
+
+2 LINE.NUM
+  ^F3_on   StartTimer
+4 JUMP ;
+: 13_10
+
+1 LINE.NUM
+  ~F3   OFF
+
+2 LINE.NUM
+  ^F3_off   StartTimer
+12 JUMP ;
+: 13_12
+
+1 LINE.NUM
+  ^D3_Feed @@ 
+  6.42    F/
+  ^F3_day @! 
+
+2 LINE.NUM
+  5000 I>F 
+  ^D3_Feed @@   F/
+  ^D3_HRT F@! 
+
+3 LINE.NUM
+  10    DELAY
+
+4 LINE.NUM
+  ^F3_day @@ 
+  ^F3_pulses @@   F/
+  ^F3_on @! 
+0 JUMP ;
+: 13_14
+1 LINE.NUM 24 I>F ^F3_pulses @@ F/ 3600 I>F F* ^F3_off @! 
+-4 JUMP ;
+: 13_17
+
+1 LINE.NUM
+  10    DELAY
+10 JUMP ;
+: 13_22
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+0 JUMP ;
+: 13_24
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 3 ON"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+0 JUMP ;
+: 13_26
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 13_29
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+9 JUMP ;
+: 13_30
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+-2 JUMP ;
+: 13_43
+
+1 LINE.NUM
+  *string_log 
+  *log   PRT$
+  ^status_log @! 
+0 JUMP ;
+: 13_44
+
+1 LINE.NUM
+  *log   CLOSE
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 13_47
+
+1 LINE.NUM
+  *log   OPEN
+  ^status_log @! 
+
+2 LINE.NUM
+  10    DELAY
+7 JUMP ;
+: 13_49
+1 LINE.NUM *_HSV_SEMA Acquire1String *Date  *_HSV_TEMP $MOVE " ,"  *_HSV_TEMP $CAT *Time  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Feed pump 3 OFF"  *_HSV_TEMP $CAT " ,"  *_HSV_TEMP $CAT " Auto"  *_HSV_TEMP $CAT 13  *_HSV_TEMP $APPEND 10  *_HSV_TEMP $APPEND *_HSV_TEMP *string_log $MOVE Release1String 
+-2 JUMP ;
+: 13_51
+
+1 LINE.NUM
+  *Date   0 DATE>$
+
+2 LINE.NUM
+  *Time   TIME>$
+-2 JUMP ;
+: 13_8
+TRUE
+
+1 LINE.NUM
+  ^F3_off   T0=
+LAND
+IF -14 ELSE -12 THEN JUMP ;
+: 13_11
+TRUE
+
+1 LINE.NUM
+  ^F3_on   T0=
+LAND
+IF -16 ELSE -1 THEN JUMP ;
+: 13_25
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -9 ELSE -11 THEN JUMP ;
+: 13_32
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -11 ELSE -3 THEN JUMP ;
+: 13_41
+FALSE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LOR
+IF -9 ELSE -5 THEN JUMP ;
+: 13_48
+TRUE
+
+1 LINE.NUM
+  *log   ?OPEN 0>
+LAND
+IF -11 ELSE -9 THEN JUMP ;
+T: T13
+DUMMY
+13_0
+13_9
+13_10
+13_12
+13_14
+13_17
+13_22
+13_24
+13_26
+13_29
+13_30
+13_43
+13_44
+13_47
+13_49
+13_51
+13_8
+13_11
+13_25
+13_32
+13_41
+13_48
+T;
+&Feed3 ' T13 SETTASK

@@ -1,0 +1,83 @@
+: 26_0
+1 JUMP ;
+: 26_3
+
+1 LINE.NUM
+  ~T1 @@   FABS
+  ^D1_Temp @! 
+
+2 LINE.NUM
+  ~T2 @@   FABS
+  ^D2_Temp @! 
+
+3 LINE.NUM
+  ~T3 @@   FABS
+  ^D3_Temp @! 
+
+4 LINE.NUM
+  ~T4 @@   FABS
+  ^D4_Temp @! 
+
+5 LINE.NUM
+  ~T5 @@   FABS
+  ^D5_Temp @! 
+
+6 LINE.NUM
+  ~T6 @@   FABS
+  ^D6_Temp @! 
+
+7 LINE.NUM
+  ~T7 @@   FABS
+  ^D7_Temp @! 
+
+8 LINE.NUM
+  ~T8 @@   FABS
+  ^D8_Temp @! 
+1 JUMP ;
+: 26_13
+
+1 LINE.NUM
+  ~PH1 @@   FABS
+  ^D1_pH @! 
+
+2 LINE.NUM
+  ~PH2 @@   FABS
+  ^D2_pH @! 
+
+3 LINE.NUM
+  ~PH3 @@   FABS
+  ^D3_pH @! 
+
+4 LINE.NUM
+  ~PH4 @@   FABS
+  ^D4_pH @! 
+
+5 LINE.NUM
+  ~PH5 @@   FABS
+  ^D5_pH @! 
+
+6 LINE.NUM
+  ~PH6 @@   FABS
+  ^D6_pH @! 
+
+7 LINE.NUM
+  ~PH7 @@   FABS
+  ^D7_pH @! 
+
+8 LINE.NUM
+  ~PH8 @@   FABS
+  ^D8_pH @! 
+-2 JUMP ;
+: 26_37
+
+1 LINE.NUM
+  10    DELAY
+-2 JUMP ;
+T: T26
+DUMMY
+26_0
+26_3
+26_13
+26_37
+T;
+&Probes ' T26 SETTASK

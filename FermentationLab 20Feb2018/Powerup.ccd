@@ -1,0 +1,143 @@
+: 0_0
+1 JUMP ;
+: 0_1
+
+1 LINE.NUM
+  &Biogas1   START.T
+  ^status_Biogas1 I@! 
+
+2 LINE.NUM
+  &Biogas2   START.T
+  ^status_Biogas2 I@! 
+
+3 LINE.NUM
+  &Biogas3   START.T
+  ^status_Biogas3 I@! 
+
+4 LINE.NUM
+  &Biogas4   START.T
+  ^status_Biogas4 I@! 
+
+5 LINE.NUM
+  &Biogas5   START.T
+  ^status_Biogas5 I@! 
+
+6 LINE.NUM
+  &Biogas6   START.T
+  ^status_Biogas6 I@! 
+
+7 LINE.NUM
+  &Biogas7   START.T
+  ^status_Biogas7 I@! 
+
+8 LINE.NUM
+  &Biogas8   START.T
+  ^status_Biogas8 I@! 
+
+9 LINE.NUM
+  &Feed1   START.T
+  ^status_Feed1 @! 
+
+10 LINE.NUM
+  &Feed2   START.T
+  ^status_Feed2 @! 
+
+11 LINE.NUM
+  &Feed3   START.T
+  ^status_Feed3 @! 
+
+12 LINE.NUM
+  &Feed4   START.T
+  ^status_Feed4 @! 
+
+13 LINE.NUM
+  &Feed5   START.T
+  ^status_Feed5 @! 
+
+14 LINE.NUM
+  &Feed6   START.T
+  ^status_Feed6 @! 
+
+15 LINE.NUM
+  &Feed7   START.T
+  ^status_Feed7 @! 
+
+16 LINE.NUM
+  &Feed8   START.T
+  ^status_Feed8 @! 
+
+17 LINE.NUM
+  &Probes   START.T
+  ^status_Probes @! 
+
+18 LINE.NUM
+  &Data_logging   START.T
+  ^status_Data_logging @! 
+
+19 LINE.NUM
+  &Recirculation1   START.T
+  ^status_Recirculation1 @! 
+
+20 LINE.NUM
+  &Recirculation2   START.T
+  ^status_Recirculation2 @! 
+
+21 LINE.NUM
+  &Recirculation3   START.T
+  ^status_Recirculation3 @! 
+
+22 LINE.NUM
+  &Recirculation4   START.T
+  ^status_Recirculation4 @! 
+
+23 LINE.NUM
+  &Recirculation5   START.T
+  ^status_Recirculation5 @! 
+
+24 LINE.NUM
+  &Recirculation6   START.T
+  ^status_Recirculation6 @! 
+
+25 LINE.NUM
+  &Recirculation7   START.T
+  ^status_Recirculation7 @! 
+
+26 LINE.NUM
+  &Recirculation8   START.T
+  ^status_Recirculation8 @! 
+3 JUMP ;
+: 0_3
+
+1 LINE.NUM
+  %Upper   ENABLE
+
+2 LINE.NUM
+ -1 E/DAllPoints
+0 JUMP ;
+: 0_12
+TRUE
+
+1 LINE.NUM
+  %Upper    ENABLE@
+LAND
+
+2 LINE.NUM
+ PTS.ENABLED?
+LAND
+IF 0 ELSE -2 THEN JUMP ;
+: 0_16
+TRUE
+
+1 LINE.NUM
+  %Upper   BoardReady? 0=
+LAND
+IF -4 ELSE -3 THEN JUMP ;
+T: T0
+DUMMY
+0_0
+0_1
+0_3
+0_12
+0_16
+T;
+&Powerup ' T0 SETTASK
